@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/udp_pic32mz_ef_sk/debug/LiveUpdate_Switcher.X.debug.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>193408</length>                 
+      <used>132136</used>                     
+      <free>61272</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>525184</length>                 
+      <used>3836</used>                     
+      <free>521348</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

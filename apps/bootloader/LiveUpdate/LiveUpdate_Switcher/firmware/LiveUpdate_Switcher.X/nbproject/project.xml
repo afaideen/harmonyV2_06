@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <Harmony xmlns="Harmony" MHC="true"/>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>LiveUpdate_Switcher</name>
+            <creation-uuid>e54023e9-3948-44ef-bf6f-29d8b223e555</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects>
+                <make-dep-project>D:/Microchip/harmony/v2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/LiveUpdate_App.X</make-dep-project>
+                <make-dep-project>../../../LiveUpdate_App/firmware/LiveUpdate_App.X</make-dep-project>
+            </make-dep-projects>
+            <sourceRootList>
+                <sourceRootElem>../src</sourceRootElem>
+                <sourceRootElem>../../..</sourceRootElem>
+                <sourceRootElem>..\src</sourceRootElem>
+                <sourceRootElem>..\src\usart_pic32mz_ef_sk</sourceRootElem>
+                <sourceRootElem>..\src\system_config\usart_pic32mz_ef_sk</sourceRootElem>
+                <sourceRootElem>../../../..</sourceRootElem>
+                <sourceRootElem>..\src\udp_pic32mz_ef_sk</sourceRootElem>
+                <sourceRootElem>..\src\system_config\udp_pic32mz_ef_sk</sourceRootElem>
+                <sourceRootElem>..\src\udp_pic32mz_ef_curiosity_v2</sourceRootElem>
+                <sourceRootElem>..\src\system_config\udp_pic32mz_ef_curiosity_v2</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>usart_pic32mz_ef_sk</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>udp_pic32mz_ef_sk</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>udp_pic32mz_ef_curiosity_v2</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>

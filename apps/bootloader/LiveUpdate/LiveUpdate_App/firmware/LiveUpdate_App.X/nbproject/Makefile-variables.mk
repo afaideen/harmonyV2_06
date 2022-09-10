@@ -1,0 +1,26 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# pic32mz_ef_sk_Inst_1 configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk_Inst_1=dist/pic32mz_ef_sk_Inst_1/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk_Inst_1=LiveUpdate_App.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk_Inst_1=dist/pic32mz_ef_sk_Inst_1/production/LiveUpdate_App.X.production.hex
+# pic32mz_ef_sk_Inst_2 configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk_Inst_2=dist/pic32mz_ef_sk_Inst_2/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk_Inst_2=LiveUpdate_App.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk_Inst_2=dist/pic32mz_ef_sk_Inst_2/production/LiveUpdate_App.X.production.hex
+# pic32mz_ef_sk_Inst_3 configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk_Inst_3=dist/pic32mz_ef_sk_Inst_3/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk_Inst_3=LiveUpdate_App.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk_Inst_3=dist/pic32mz_ef_sk_Inst_3/production/LiveUpdate_App.X.production.hex
+# pic32mz_ef_sk_udp_led3 configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk_udp_led3=dist/pic32mz_ef_sk_udp_led3/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk_udp_led3=LiveUpdate_App.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk_udp_led3=dist/pic32mz_ef_sk_udp_led3/production/LiveUpdate_App.X.production.hex
+# pic32mz_curiosity_v2_udp_led3 configuration
+CND_ARTIFACT_DIR_pic32mz_curiosity_v2_udp_led3=dist/pic32mz_curiosity_v2_udp_led3/production
+CND_ARTIFACT_NAME_pic32mz_curiosity_v2_udp_led3=LiveUpdate_App.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_curiosity_v2_udp_led3=dist/pic32mz_curiosity_v2_udp_led3/production/LiveUpdate_App.X.production.hex

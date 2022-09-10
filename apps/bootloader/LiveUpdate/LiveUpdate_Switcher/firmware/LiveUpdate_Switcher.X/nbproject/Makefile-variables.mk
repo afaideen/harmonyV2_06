@@ -1,0 +1,18 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# usart_pic32mz_ef_sk configuration
+CND_ARTIFACT_DIR_usart_pic32mz_ef_sk=dist/usart_pic32mz_ef_sk/production
+CND_ARTIFACT_NAME_usart_pic32mz_ef_sk=LiveUpdate_Switcher.X.production.hex
+CND_ARTIFACT_PATH_usart_pic32mz_ef_sk=dist/usart_pic32mz_ef_sk/production/LiveUpdate_Switcher.X.production.hex
+# udp_pic32mz_ef_sk configuration
+CND_ARTIFACT_DIR_udp_pic32mz_ef_sk=dist/udp_pic32mz_ef_sk/production
+CND_ARTIFACT_NAME_udp_pic32mz_ef_sk=LiveUpdate_Switcher.X.production.hex
+CND_ARTIFACT_PATH_udp_pic32mz_ef_sk=dist/udp_pic32mz_ef_sk/production/LiveUpdate_Switcher.X.production.hex
+# udp_pic32mz_ef_curiosity_v2 configuration
+CND_ARTIFACT_DIR_udp_pic32mz_ef_curiosity_v2=dist/udp_pic32mz_ef_curiosity_v2/production
+CND_ARTIFACT_NAME_udp_pic32mz_ef_curiosity_v2=LiveUpdate_Switcher.X.production.hex
+CND_ARTIFACT_PATH_udp_pic32mz_ef_curiosity_v2=dist/udp_pic32mz_ef_curiosity_v2/production/LiveUpdate_Switcher.X.production.hex

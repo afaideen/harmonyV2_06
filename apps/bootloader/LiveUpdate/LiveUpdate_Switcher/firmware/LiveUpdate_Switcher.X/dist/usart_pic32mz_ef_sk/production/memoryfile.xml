@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/usart_pic32mz_ef_sk/production/LiveUpdate_Switcher.X.production.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>62336</length>                 
+      <used>12140</used>                     
+      <free>50196</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>524288</length>                 
+      <used>148</used>                     
+      <free>524140</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

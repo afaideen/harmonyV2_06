@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/pic32mx_eth_sk/production/basic_mybootloader.X.production.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>135936</length>                 
+      <used>77884</used>                     
+      <free>58052</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>131072</length>                 
+      <used>3052</used>                     
+      <free>128020</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 
