@@ -75,6 +75,15 @@ void __ISR(_TIMER_1_VECTOR, ipl1AUTO) IntHandlerDrvTmrInstance0(void)
 {
     DRV_TMR_Tasks(sysObj.drvTmr0);
 }
+ void __ISR(_USB_VECTOR, ipl4AUTO) _IntHandlerUSBInstance0(void)
+{
+    DRV_USBHS_Tasks_ISR(sysObj.drvUSBObject);
+}
+
+void __ISR ( _USB_DMA_VECTOR,ipl4AUTO) _IntHandlerUSBInstance0_USBDMA ( void )
+{
+    DRV_USBHS_Tasks_ISR_USBDMA(sysObj.drvUSBObject);
+}
  void __ISR(_ETHERNET_VECTOR, ipl5AUTO) _IntHandler_ETHMAC(void)
 {
     DRV_ETHMAC_Tasks_ISR((SYS_MODULE_OBJ)0);

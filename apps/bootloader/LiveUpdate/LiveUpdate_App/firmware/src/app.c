@@ -145,8 +145,7 @@ void APP_Initialize ( void )
     /* Check from which Bank the Application is running */
     if ((NVMCON & _NVMCON_PFSWAP_MASK) != _NVMCON_PFSWAP_MASK)
     {
-//                    BSP_RGB_LED_BLUEOn();
-        BSP_RGB_LED_BLUEToggle();
+        BSP_RGB_LED_BLUEOn();
         appData.fw_bank_running = 1;
         SYS_CONSOLE_MESSAGE("\n\r####### Live Update Application running from Program Flash BANK 1 #######\n\r");
         SYS_CONSOLE_MESSAGE("\n\r####### Send new binary from host tool to program in BANK 2 #######\n\r");

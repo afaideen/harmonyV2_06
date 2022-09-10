@@ -72,6 +72,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 void SYS_Tasks ( void )
 {
     /* Maintain system services */
+    /* SYS_COMMAND layer tasks routine */ 
+    SYS_CMD_Tasks();
+    SYS_CONSOLE_Tasks(sysObj.sysConsole0);
     /* SYS_TMR Device layer tasks routine */ 
     SYS_TMR_Tasks(sysObj.sysTmr);
 
@@ -81,6 +84,13 @@ void SYS_Tasks ( void )
     Bootloader_Tasks();
     /* Maintain the TCP/IP Stack*/
     TCPIP_STACK_Task(sysObj.tcpip);
+
+    /* USB HS Driver Task Routine */ 
+     DRV_USBHS_Tasks(sysObj.drvUSBObject);
+     
+ 
+    /* USB Device layer tasks routine */ 
+    USB_DEVICE_Tasks(sysObj.usbDevObject0);
 
     /* Maintain the application's state machine. */
     APP_Tasks();

@@ -175,6 +175,27 @@ extern "C" {
 #define SYS_PORT_K_CNEN         0x0000
 
 
+/*** Command Processor System Service Configuration ***/
+#define SYS_CMD_ENABLE
+#define SYS_CMD_DEVICE_MAX_INSTANCES    SYS_CONSOLE_DEVICE_MAX_INSTANCES
+#define SYS_CMD_PRINT_BUFFER_SIZE       8192
+#define SYS_CMD_BUFFER_DMA_READY        __attribute__((coherent)) __attribute__((aligned(16)))
+#define SYS_CMD_REMAP_SYS_CONSOLE_MESSAGE
+
+/*** Console System Service Configuration ***/
+
+#define SYS_CONSOLE_OVERRIDE_STDIO
+#define SYS_CONSOLE_DEVICE_MAX_INSTANCES        2
+#define SYS_CONSOLE_INSTANCES_NUMBER            1
+#define SYS_CONSOLE_USB_CDC_INSTANCE       USB_DEVICE_CDC_INDEX_0
+#define SYS_CONSOLE_USB_CDC_COMM_BAUD_RATE 115200
+#define SYS_CONSOLE_USB_CDC_RD_QUEUE_DEPTH 2
+#define SYS_CONSOLE_USB_CDC_WR_QUEUE_DEPTH 128
+#define SYS_CONSOLE_USB_CDC_READ_BUFFER_SIZE   512
+#define SYS_CONSOLE_BUFFER_DMA_READY        __attribute__((coherent)) __attribute__((aligned(16)))
+
+
+
 /*** Interrupt System Service Configuration ***/
 #define SYS_INT                     true
 // *****************************************************************************
@@ -442,6 +463,76 @@ extern "C" {
 #define TCPIP_NETWORK_DEFAULT_IPV6_ADDRESS_IDX0			0
 #define TCPIP_NETWORK_DEFAULT_IPV6_PREFIX_LENGTH_IDX0	0
 #define TCPIP_NETWORK_DEFAULT_IPV6_GATEWAY_IDX0			0
+/*** USB Driver Configuration ***/
+
+
+/* Enables Device Support */
+#define DRV_USBHS_DEVICE_SUPPORT      true
+
+/* Disable Host Support */
+#define DRV_USBHS_HOST_SUPPORT      false
+
+/* Maximum USB driver instances */
+#define DRV_USBHS_INSTANCES_NUMBER    1
+
+/* Interrupt mode enabled */
+#define DRV_USBHS_INTERRUPT_MODE      true
+
+
+/* Number of Endpoints used */
+#define DRV_USBHS_ENDPOINTS_NUMBER    1
+
+
+
+
+/*** USB Device Stack Configuration ***/
+
+
+
+
+
+
+
+
+
+
+/* The USB Device Layer will not initialize the USB Driver */
+#define USB_DEVICE_DRIVER_INITIALIZE_EXPLICIT
+
+/* Maximum device layer instances */
+#define USB_DEVICE_INSTANCES_NUMBER     1
+
+/* EP0 size in bytes */
+#define USB_DEVICE_EP0_BUFFER_SIZE      64
+
+
+
+
+
+
+
+
+
+
+/* Maximum instances of CDC function driver */
+#define USB_DEVICE_CDC_INSTANCES_NUMBER     1
+
+
+
+
+
+
+
+
+
+
+/* CDC Transfer Queue Size for both read and
+   write. Applicable to all instances of the
+   function driver */
+#define USB_DEVICE_CDC_QUEUE_DEPTH_COMBINED 3
+
+
+
 // *****************************************************************************
 /* BSP Configuration Options
 */
@@ -485,6 +576,8 @@ extern "C" {
 
 /*** Application Instance 0 Configuration ***/
 #define LED_NUMBER BSP_LED_3
+#define BSP_RGB_LED_BLUEOn() 
+#define BSP_RGB_LED_GREENOn()
 
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus

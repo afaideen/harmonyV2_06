@@ -27,7 +27,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 PROJECTNAME=LiveUpdate_App.X
 
 # Active Configuration
-DEFAULTCONF=pic32mz_curiosity_v2_udp_led3
+DEFAULTCONF=pic32mz_ef_sk_udp_led3
 CONF=${DEFAULTCONF}
 
 # All Configurations
