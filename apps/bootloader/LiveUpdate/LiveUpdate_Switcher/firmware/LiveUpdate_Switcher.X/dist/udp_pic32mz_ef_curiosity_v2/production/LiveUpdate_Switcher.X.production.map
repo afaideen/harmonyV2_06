@@ -17,27 +17,27 @@ c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(strlen.o)
                               build/udp_pic32mz_ef_curiosity_v2/production/_ext/593738990/helpers.o (strlen)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (_bootstrap_exception_handler)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (_bootstrap_exception_handler)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (_on_reset)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (_on_reset)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (_on_bootstrap)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (_on_bootstrap)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-nmi-handler.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (_nmi_handler)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (_nmi_handler)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_data_init.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (__pic32_data_init)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (__pic32_data_init)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_cache.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (__pic32_init_cache)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (__pic32_init_cache)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_tlb_ebi_sqi.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (__pic32_tlb_init_ebi_sqi)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (__pic32_tlb_init_ebi_sqi)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(general-exception.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (_general_exception_context)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (_general_exception_context)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (_cache_err_exception_context)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (_cache_err_exception_context)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(simple-tlb-refill-exception.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o (_simple_tlb_refill_exception_context)
+                              C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o (_simple_tlb_refill_exception_context)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
-                              C:\Users\afaid\AppData\Local\Temp\cc2wx4xm.o (_DefaultInterrupt)
+                              C:\Users\afaid\AppData\Local\Temp\ccCtH6ip.o (_DefaultInterrupt)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
                               c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o) (_cache_err_exception_handler)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
@@ -1411,19 +1411,19 @@ Discarded input sections
  .data          0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\vector_offset_init.o
  .bss           0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\vector_offset_init.o
  .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\vector_offset_init.o
- .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
- .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
- .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
- .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
- .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccWkVPKZ.o
- .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccWkVPKZ.o
- .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccWkVPKZ.o
- .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\ccWkVPKZ.o
- .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc2wx4xm.o
- .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc2wx4xm.o
- .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc2wx4xm.o
- .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\cc2wx4xm.o
- .discard       0x00000000        0x4 C:\Users\afaid\AppData\Local\Temp\cc2wx4xm.o
+ .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
+ .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
+ .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
+ .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
+ .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc5n4RuM.o
+ .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc5n4RuM.o
+ .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc5n4RuM.o
+ .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\cc5n4RuM.o
+ .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccCtH6ip.o
+ .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccCtH6ip.o
+ .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccCtH6ip.o
+ .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\ccCtH6ip.o
+ .discard       0x00000000        0x4 C:\Users\afaid\AppData\Local\Temp\ccCtH6ip.o
  .text          0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
  .data          0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
  .bss           0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
@@ -2139,16 +2139,16 @@ END GROUP
 
 .reset          0xbfc00000      0x1c4
  *(.reset)
- .reset         0xbfc00000       0x18 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
+ .reset         0xbfc00000       0x18 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
                 0xbfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0xbfc00018      0x1ac C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
+                0xbfc00018      0x1ac C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
                 0xbfc00018                _startup
 
 .bev_excpt      0xbfc00380       0x10
  *(.bev_handler)
- .bev_handler   0xbfc00380       0x10 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
+ .bev_handler   0xbfc00380       0x10 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
 
 .cache_init     0xbfc004b0      0x1fc
  *(.cache_init)
@@ -2165,17 +2165,17 @@ END GROUP
                 0x9fc01000       0x10
  *(.simple_tlb_refill_vector)
  .simple_tlb_refill_vector
-                0x9fc01000       0x10 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
+                0x9fc01000       0x10 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
 
 .cache_err_excpt
                 0x9fc01100       0x10
  *(.cache_err_vector)
  .cache_err_vector
-                0x9fc01100       0x10 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
+                0x9fc01100       0x10 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
 
 .app_excpt      0x9fc01180       0x10
  *(.gen_handler)
- .gen_handler   0x9fc01180       0x10 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
+ .gen_handler   0x9fc01180       0x10 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
 
 .vectors        0x9fc01200       0x58
                 0x00000210                __vector_offset_0 = DEFINED (__vector_dispatch_0)?(. - _ebase_address):__vector_offset_default
@@ -3269,73 +3269,73 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x9382e
+.debug_info     0x00000000    0x93924
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x1434 build/udp_pic32mz_ef_curiosity_v2/production/_ext/80646058/bsp.o
- .debug_info    0x00001434     0x238c build/udp_pic32mz_ef_curiosity_v2/production/_ext/1559072963/sys_clk_pic32mz.o
- .debug_info    0x000037c0     0x19b1 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon.o
- .debug_info    0x00005171     0x14bd build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_pic32mz.o
- .debug_info    0x0000662e       0xfa build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_cache_pic32mz.o
- .debug_info    0x00006728     0x6240 build/udp_pic32mz_ef_curiosity_v2/production/_ext/818113363/sys_ports_static.o
- .debug_info    0x0000c968      0xc90 build/udp_pic32mz_ef_curiosity_v2/production/_ext/72700778/sys_reset.o
- .debug_info    0x0000d5f8     0x8b20 build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_init.o
- .debug_info    0x00016118     0x274b build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_interrupt.o
- .debug_info    0x00018863      0xf94 build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_exceptions.o
- .debug_info    0x000197f7     0x1050 build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_tasks.o
- .debug_info    0x0001a847      0x1ce build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/main.o
- .debug_info    0x0001aa15     0x11e8 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/app.o
- .debug_info    0x0001bbfd     0x19eb build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream.o
- .debug_info    0x0001d5e8     0x7379 build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream_udp.o
- .debug_info    0x00024961     0x26a3 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/bootloader.o
- .debug_info    0x00027004     0x1b38 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/nvm.o
- .debug_info    0x00028b3c     0xe9e5 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac.o
- .debug_info    0x00037521     0xbbd7 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac_lib.o
- .debug_info    0x000430f8     0x7030 build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_ethphy.o
- .debug_info    0x0004a128     0x1a63 build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_extphy_ksz8061.o
- .debug_info    0x0004bb8b     0x7e26 build/udp_pic32mz_ef_curiosity_v2/production/_ext/572279899/drv_miim.o
- .debug_info    0x000539b1     0x6559 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1152366776/drv_tmr.o
- .debug_info    0x00059f0a     0x225b build/udp_pic32mz_ef_curiosity_v2/production/_ext/711155467/sys_int_pic32.o
- .debug_info    0x0005c165      0x7eb build/udp_pic32mz_ef_curiosity_v2/production/_ext/899838009/sys_random.o
- .debug_info    0x0005c950     0x2b85 build/udp_pic32mz_ef_curiosity_v2/production/_ext/430974239/sys_tmr.o
- .debug_info    0x0005f4d5      0x4a7 build/udp_pic32mz_ef_curiosity_v2/production/_ext/593738990/helpers.o
- .debug_info    0x0005f97c     0x6789 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/ipv4.o
- .debug_info    0x00066105     0x8e62 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/udp.o
- .debug_info    0x0006ef67     0x1585 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_alloc.o
- .debug_info    0x000704ec     0x23fa build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_internal.o
- .debug_info    0x000728e6     0x6e25 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/arp.o
- .debug_info    0x0007970b      0xef5 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dhcp.o
- .debug_info    0x0007a600     0x1358 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dns.o
- .debug_info    0x0007b958      0x29c build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/hash_fnv.o
- .debug_info    0x0007bbf4      0x8b6 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/oahash.o
- .debug_info    0x0007c4aa     0x55fa build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helpers.o
- .debug_info    0x00081aa4       0xcb build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helper_c32.o
- .debug_info    0x00081b6f     0xaeeb build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_manager.o
- .debug_info    0x0008ca5a     0x139d build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_notify.o
- .debug_info    0x0008ddf7     0x372e build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_packet.o
- .debug_info    0x00091525      0x751 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_info    0x00091c76       0xf4 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_info    0x00091d6a       0xcd c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_info    0x00091e37       0xd5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x00091f0c       0xe7 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_info    0x00091ff3       0xf4 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_info    0x000920e7      0x104 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_info    0x000921eb       0xc0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(atoi.o)
- .debug_info    0x000922ab       0xc4 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(calloc.o)
- .debug_info    0x0009236f      0x238 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctypef.o)
- .debug_info    0x000925a7       0xf5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(malloc.o)
- .debug_info    0x0009269c       0xdb c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(rand.o)
- .debug_info    0x00092777       0xc6 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strncpy.o)
- .debug_info    0x0009283d       0xdb c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strtol.o)
- .debug_info    0x00092918       0xd3 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(snprintf_cdnopsuxX.eo)
- .debug_info    0x000929eb       0xd0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(sprintf_cdnopuxX.eo)
- .debug_info    0x00092abb       0xd5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(vsnprintf_cdnopsuxX.eo)
- .debug_info    0x00092b90       0xd2 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_info    0x00092c62       0xc2 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_info    0x00092d24       0xc5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_info    0x00092de9      0x78e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_info    0x00093577      0x131 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(sbrk.o)
- .debug_info    0x000936a8       0xbf c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
- .debug_info    0x00093767       0xc7 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(_mon_putc.o)
+ .debug_info    0x00000000     0x143a build/udp_pic32mz_ef_curiosity_v2/production/_ext/80646058/bsp.o
+ .debug_info    0x0000143a     0x2392 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1559072963/sys_clk_pic32mz.o
+ .debug_info    0x000037cc     0x19b7 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon.o
+ .debug_info    0x00005183     0x14c3 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_pic32mz.o
+ .debug_info    0x00006646      0x100 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_cache_pic32mz.o
+ .debug_info    0x00006746     0x6246 build/udp_pic32mz_ef_curiosity_v2/production/_ext/818113363/sys_ports_static.o
+ .debug_info    0x0000c98c      0xc96 build/udp_pic32mz_ef_curiosity_v2/production/_ext/72700778/sys_reset.o
+ .debug_info    0x0000d622     0x8b26 build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_init.o
+ .debug_info    0x00016148     0x2751 build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_interrupt.o
+ .debug_info    0x00018899      0xf9a build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_exceptions.o
+ .debug_info    0x00019833     0x1056 build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_tasks.o
+ .debug_info    0x0001a889      0x1d4 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/main.o
+ .debug_info    0x0001aa5d     0x11ee build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/app.o
+ .debug_info    0x0001bc4b     0x19f1 build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream.o
+ .debug_info    0x0001d63c     0x737f build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream_udp.o
+ .debug_info    0x000249bb     0x26a9 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/bootloader.o
+ .debug_info    0x00027064     0x1b3e build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/nvm.o
+ .debug_info    0x00028ba2     0xe9eb build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac.o
+ .debug_info    0x0003758d     0xbbdd build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac_lib.o
+ .debug_info    0x0004316a     0x7036 build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_ethphy.o
+ .debug_info    0x0004a1a0     0x1a69 build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_extphy_ksz8061.o
+ .debug_info    0x0004bc09     0x7e2c build/udp_pic32mz_ef_curiosity_v2/production/_ext/572279899/drv_miim.o
+ .debug_info    0x00053a35     0x655f build/udp_pic32mz_ef_curiosity_v2/production/_ext/1152366776/drv_tmr.o
+ .debug_info    0x00059f94     0x2261 build/udp_pic32mz_ef_curiosity_v2/production/_ext/711155467/sys_int_pic32.o
+ .debug_info    0x0005c1f5      0x7f1 build/udp_pic32mz_ef_curiosity_v2/production/_ext/899838009/sys_random.o
+ .debug_info    0x0005c9e6     0x2b8b build/udp_pic32mz_ef_curiosity_v2/production/_ext/430974239/sys_tmr.o
+ .debug_info    0x0005f571      0x4ad build/udp_pic32mz_ef_curiosity_v2/production/_ext/593738990/helpers.o
+ .debug_info    0x0005fa1e     0x678f build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/ipv4.o
+ .debug_info    0x000661ad     0x8e68 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/udp.o
+ .debug_info    0x0006f015     0x158b build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_alloc.o
+ .debug_info    0x000705a0     0x2400 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_internal.o
+ .debug_info    0x000729a0     0x6e2b build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/arp.o
+ .debug_info    0x000797cb      0xefb build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dhcp.o
+ .debug_info    0x0007a6c6     0x135e build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dns.o
+ .debug_info    0x0007ba24      0x2a2 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/hash_fnv.o
+ .debug_info    0x0007bcc6      0x8bc build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/oahash.o
+ .debug_info    0x0007c582     0x5600 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helpers.o
+ .debug_info    0x00081b82       0xd1 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helper_c32.o
+ .debug_info    0x00081c53     0xaef1 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_manager.o
+ .debug_info    0x0008cb44     0x13a3 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_notify.o
+ .debug_info    0x0008dee7     0x3734 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_packet.o
+ .debug_info    0x0009161b      0x751 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_info    0x00091d6c       0xf4 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x00091e60       0xcd c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_info    0x00091f2d       0xd5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x00092002       0xe7 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x000920e9       0xf4 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_info    0x000921dd      0x104 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_info    0x000922e1       0xc0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(atoi.o)
+ .debug_info    0x000923a1       0xc4 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(calloc.o)
+ .debug_info    0x00092465      0x238 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctypef.o)
+ .debug_info    0x0009269d       0xf5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(malloc.o)
+ .debug_info    0x00092792       0xdb c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(rand.o)
+ .debug_info    0x0009286d       0xc6 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strncpy.o)
+ .debug_info    0x00092933       0xdb c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strtol.o)
+ .debug_info    0x00092a0e       0xd3 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(snprintf_cdnopsuxX.eo)
+ .debug_info    0x00092ae1       0xd0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(sprintf_cdnopuxX.eo)
+ .debug_info    0x00092bb1       0xd5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(vsnprintf_cdnopsuxX.eo)
+ .debug_info    0x00092c86       0xd2 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_info    0x00092d58       0xc2 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_info    0x00092e1a       0xc5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_info    0x00092edf      0x78e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_info    0x0009366d      0x131 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(sbrk.o)
+ .debug_info    0x0009379e       0xbf c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_info    0x0009385d       0xc7 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(_mon_putc.o)
 
 .debug_abbrev   0x00000000     0x80a9
  *(.debug_abbrev)
@@ -3405,77 +3405,77 @@ END GROUP
  .debug_abbrev  0x00008059       0x28 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
  .debug_abbrev  0x00008081       0x28 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(_mon_putc.o)
 
-.debug_line     0x00000000    0x10528
+.debug_line     0x00000000    0x10b1c
  *(.debug_line)
- .debug_line    0x00000000      0x38f build/udp_pic32mz_ef_curiosity_v2/production/_ext/80646058/bsp.o
- .debug_line    0x0000038f      0x5b7 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1559072963/sys_clk_pic32mz.o
- .debug_line    0x00000946      0x67d build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon.o
- .debug_line    0x00000fc3      0x5c2 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_pic32mz.o
- .debug_line    0x00001585      0x234 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_cache_pic32mz.o
- .debug_line    0x000017b9      0xa56 build/udp_pic32mz_ef_curiosity_v2/production/_ext/818113363/sys_ports_static.o
- .debug_line    0x0000220f      0x3fd build/udp_pic32mz_ef_curiosity_v2/production/_ext/72700778/sys_reset.o
- .debug_line    0x0000260c      0x89c build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_init.o
- .debug_line    0x00002ea8      0x3de build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_interrupt.o
- .debug_line    0x00003286      0x218 build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_exceptions.o
- .debug_line    0x0000349e      0x38b build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_tasks.o
- .debug_line    0x00003829       0xd3 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/main.o
- .debug_line    0x000038fc      0x2ab build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/app.o
- .debug_line    0x00003ba7      0x36c build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream.o
- .debug_line    0x00003f13      0x68a build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream_udp.o
- .debug_line    0x0000459d      0x637 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/bootloader.o
- .debug_line    0x00004bd4      0x590 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/nvm.o
- .debug_line    0x00005164     0x1027 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac.o
- .debug_line    0x0000618b      0xc83 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac_lib.o
- .debug_line    0x00006e0e      0xdfc build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_ethphy.o
- .debug_line    0x00007c0a      0x268 build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_extphy_ksz8061.o
- .debug_line    0x00007e72      0xab0 build/udp_pic32mz_ef_curiosity_v2/production/_ext/572279899/drv_miim.o
- .debug_line    0x00008922      0xc23 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1152366776/drv_tmr.o
- .debug_line    0x00009545      0x2e9 build/udp_pic32mz_ef_curiosity_v2/production/_ext/711155467/sys_int_pic32.o
- .debug_line    0x0000982e      0x293 build/udp_pic32mz_ef_curiosity_v2/production/_ext/899838009/sys_random.o
- .debug_line    0x00009ac1      0x667 build/udp_pic32mz_ef_curiosity_v2/production/_ext/430974239/sys_tmr.o
- .debug_line    0x0000a128      0x195 build/udp_pic32mz_ef_curiosity_v2/production/_ext/593738990/helpers.o
- .debug_line    0x0000a2bd      0x7ad build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/ipv4.o
- .debug_line    0x0000aa6a      0xda6 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/udp.o
- .debug_line    0x0000b810      0x235 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_alloc.o
- .debug_line    0x0000ba45      0x4b7 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_internal.o
- .debug_line    0x0000befc      0x962 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/arp.o
- .debug_line    0x0000c85e      0x1da build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dhcp.o
- .debug_line    0x0000ca38      0x20e build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dns.o
- .debug_line    0x0000cc46      0x125 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/hash_fnv.o
- .debug_line    0x0000cd6b      0x1d4 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/oahash.o
- .debug_line    0x0000cf3f      0xdbd build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helpers.o
- .debug_line    0x0000dcfc      0x100 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helper_c32.o
- .debug_line    0x0000ddfc     0x12e3 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_manager.o
- .debug_line    0x0000f0df      0x27d build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_notify.o
- .debug_line    0x0000f35c      0x400 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_packet.o
- .debug_line    0x0000f75c       0xf7 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_line    0x0000f853       0xa6 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x0000f8f9       0x93 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_line    0x0000f98c       0x97 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x0000fa23       0xa5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_line    0x0000fac8       0xa6 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_line    0x0000fb6e       0xae c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_line    0x0000fc1c       0x7c c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(atoi.o)
- .debug_line    0x0000fc98       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(calloc.o)
- .debug_line    0x0000fd16        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
- .debug_line    0x0000fd16       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctypef.o)
- .debug_line    0x0000fd94       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(malloc.o)
- .debug_line    0x0000fe12       0x7c c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(rand.o)
- .debug_line    0x0000fe8e       0x7f c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strncpy.o)
- .debug_line    0x0000ff0d       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strtol.o)
- .debug_line    0x0000ff8b       0x80 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(snprintf_cdnopsuxX.eo)
- .debug_line    0x0001000b       0x7f c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(sprintf_cdnopuxX.eo)
- .debug_line    0x0001008a       0x81 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(vsnprintf_cdnopsuxX.eo)
- .debug_line    0x0001010b        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(errno.o)
- .debug_line    0x0001010b       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_line    0x00010189       0x7d c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_line    0x00010206        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
- .debug_line    0x00010206       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_line    0x00010284      0x109 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_line    0x0001038d       0x87 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(sbrk.o)
- .debug_line    0x00010414       0x88 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
- .debug_line    0x0001049c       0x8c c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(_mon_putc.o)
- .debug_line    0x00010528        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(xc32_uart.o)
+ .debug_line    0x00000000      0x3a1 build/udp_pic32mz_ef_curiosity_v2/production/_ext/80646058/bsp.o
+ .debug_line    0x000003a1      0x5ed build/udp_pic32mz_ef_curiosity_v2/production/_ext/1559072963/sys_clk_pic32mz.o
+ .debug_line    0x0000098e      0x6c5 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon.o
+ .debug_line    0x00001053      0x5ec build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_pic32mz.o
+ .debug_line    0x0000163f      0x234 build/udp_pic32mz_ef_curiosity_v2/production/_ext/218585956/sys_devcon_cache_pic32mz.o
+ .debug_line    0x00001873      0xa8c build/udp_pic32mz_ef_curiosity_v2/production/_ext/818113363/sys_ports_static.o
+ .debug_line    0x000022ff      0x421 build/udp_pic32mz_ef_curiosity_v2/production/_ext/72700778/sys_reset.o
+ .debug_line    0x00002720      0x91a build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_init.o
+ .debug_line    0x0000303a      0x40e build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_interrupt.o
+ .debug_line    0x00003448      0x22a build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_exceptions.o
+ .debug_line    0x00003672      0x3bb build/udp_pic32mz_ef_curiosity_v2/production/_ext/794083578/system_tasks.o
+ .debug_line    0x00003a2d       0xdf build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/main.o
+ .debug_line    0x00003b0c      0x2c3 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1360937237/app.o
+ .debug_line    0x00003dcf      0x390 build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream.o
+ .debug_line    0x0000415f      0x6de build/udp_pic32mz_ef_curiosity_v2/production/_ext/682638542/datastream_udp.o
+ .debug_line    0x0000483d      0x673 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/bootloader.o
+ .debug_line    0x00004eb0      0x5b4 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1854679915/nvm.o
+ .debug_line    0x00005464     0x1075 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac.o
+ .debug_line    0x000064d9      0xcbf build/udp_pic32mz_ef_curiosity_v2/production/_ext/1764881201/drv_ethmac_lib.o
+ .debug_line    0x00007198      0xe38 build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_ethphy.o
+ .debug_line    0x00007fd0      0x286 build/udp_pic32mz_ef_curiosity_v2/production/_ext/588727395/drv_extphy_ksz8061.o
+ .debug_line    0x00008256      0xaec build/udp_pic32mz_ef_curiosity_v2/production/_ext/572279899/drv_miim.o
+ .debug_line    0x00008d42      0xc71 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1152366776/drv_tmr.o
+ .debug_line    0x000099b3      0x301 build/udp_pic32mz_ef_curiosity_v2/production/_ext/711155467/sys_int_pic32.o
+ .debug_line    0x00009cb4      0x2ab build/udp_pic32mz_ef_curiosity_v2/production/_ext/899838009/sys_random.o
+ .debug_line    0x00009f5f      0x691 build/udp_pic32mz_ef_curiosity_v2/production/_ext/430974239/sys_tmr.o
+ .debug_line    0x0000a5f0      0x19b build/udp_pic32mz_ef_curiosity_v2/production/_ext/593738990/helpers.o
+ .debug_line    0x0000a78b      0x7cb build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/ipv4.o
+ .debug_line    0x0000af56      0xdd0 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/udp.o
+ .debug_line    0x0000bd26      0x241 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_alloc.o
+ .debug_line    0x0000bf67      0x4d5 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_heap_internal.o
+ .debug_line    0x0000c43c      0x980 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/arp.o
+ .debug_line    0x0000cdbc      0x1e6 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dhcp.o
+ .debug_line    0x0000cfa2      0x21a build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/dns.o
+ .debug_line    0x0000d1bc      0x12b build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/hash_fnv.o
+ .debug_line    0x0000d2e7      0x1da build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/oahash.o
+ .debug_line    0x0000d4c1      0xddb build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helpers.o
+ .debug_line    0x0000e29c      0x100 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_helper_c32.o
+ .debug_line    0x0000e39c     0x130d build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_manager.o
+ .debug_line    0x0000f6a9      0x28f build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_notify.o
+ .debug_line    0x0000f938      0x418 build/udp_pic32mz_ef_curiosity_v2/production/_ext/1833714580/tcpip_packet.o
+ .debug_line    0x0000fd50       0xf7 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_line    0x0000fe47       0xa6 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x0000feed       0x93 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_line    0x0000ff80       0x97 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x00010017       0xa5 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x000100bc       0xa6 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_line    0x00010162       0xae c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_line    0x00010210       0x7c c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(atoi.o)
+ .debug_line    0x0001028c       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(calloc.o)
+ .debug_line    0x0001030a        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
+ .debug_line    0x0001030a       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctypef.o)
+ .debug_line    0x00010388       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(malloc.o)
+ .debug_line    0x00010406       0x7c c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(rand.o)
+ .debug_line    0x00010482       0x7f c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strncpy.o)
+ .debug_line    0x00010501       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(strtol.o)
+ .debug_line    0x0001057f       0x80 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(snprintf_cdnopsuxX.eo)
+ .debug_line    0x000105ff       0x7f c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(sprintf_cdnopuxX.eo)
+ .debug_line    0x0001067e       0x81 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(vsnprintf_cdnopsuxX.eo)
+ .debug_line    0x000106ff        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(errno.o)
+ .debug_line    0x000106ff       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_line    0x0001077d       0x7d c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_line    0x000107fa        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
+ .debug_line    0x000107fa       0x7e c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_line    0x00010878      0x109 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_line    0x00010981       0x87 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(sbrk.o)
+ .debug_line    0x00010a08       0x88 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_line    0x00010a90       0x8c c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(_mon_putc.o)
+ .debug_line    0x00010b1c        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(xc32_uart.o)
 
 .debug_frame    0x00000000     0x50ec
  *(.debug_frame)
@@ -3931,9 +3931,9 @@ END GROUP
  *fill*         0x9fc14000     0xbfff ff
                 0x9fc1ffff        0x1 BYTE 0xff
                 0x00011148                _min_heap_size = 0x11148
-LOAD C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
-LOAD C:\Users\afaid\AppData\Local\Temp\ccWkVPKZ.o
-LOAD C:\Users\afaid\AppData\Local\Temp\cc2wx4xm.o
+LOAD C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
+LOAD C:\Users\afaid\AppData\Local\Temp\cc5n4RuM.o
+LOAD C:\Users\afaid\AppData\Local\Temp\ccCtH6ip.o
 LOAD c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
 LOAD c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\pic32_software_reset.o
 LOAD c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a
@@ -5489,7 +5489,7 @@ LOAD data_init
 .text.main_entry
                 0x9fc03ea8       0x54
  .text.main_entry
-                0x9fc03ea8       0x54 C:\Users\afaid\AppData\Local\Temp\ccwYQaxU.o
+                0x9fc03ea8       0x54 C:\Users\afaid\AppData\Local\Temp\ccA7gZgw.o
                 0x9fc03edc                __crt0_exit
 
 .text.SYS_CLK_PeripheralFrequencyGet

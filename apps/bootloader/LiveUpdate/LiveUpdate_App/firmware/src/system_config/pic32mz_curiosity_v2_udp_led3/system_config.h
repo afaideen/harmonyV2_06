@@ -611,8 +611,8 @@ extern "C" {
 
 /*** Application Instance 0 Configuration ***/
 //#define LED_NUMBER                              BSP_LED_1
-#define LED_NUMBER                              BSP_LED_2
-//#define LED_NUMBER                              BSP_LED_3
+//#define LED_NUMBER                              BSP_LED_2
+#define LED_NUMBER                              BSP_LED_3
 //#define BOOTLOADER_LIVE_UPDATE_SWITCHER         1
 //#define BOOTLOADER_LEGACY
 
