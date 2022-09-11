@@ -343,6 +343,7 @@
                        displayName="udp_pic32mz_ef_curiosity_v2"
                        projectFiles="true">
           <itemPath>../src/system_config/udp_pic32mz_ef_curiosity_v2/btl_mz.ld</itemPath>
+          <itemPath>../src/system_config/udp_pic32mz_ef_curiosity_v2/switcher.ld</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="udp_pic32mz_ef_sk" projectFiles="true">
           <itemPath>../src/system_config/udp_pic32mz_ef_sk/btl_mz.ld</itemPath>
@@ -6267,7 +6268,7 @@
         <makeCustomizationPostStep></makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
-        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+        <makeCustomizationNormalizeHexFile>true</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
       <item path="../../../../../../framework/bootloader/src/datastream/datastream_usart.c"
             ex="true"
@@ -6378,6 +6379,24 @@
         </C32Global>
       </item>
       <item path="../../../../../../framework/system/dma/sys_dma_definitions.h"
+            ex="true"
+            overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
+      <item path="../src/system_config/udp_pic32mz_ef_curiosity_v2/switcher.ld"
             ex="true"
             overriding="false">
         <C32>
