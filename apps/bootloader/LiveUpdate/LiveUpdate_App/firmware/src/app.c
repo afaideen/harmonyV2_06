@@ -217,14 +217,7 @@ void APP_Tasks ( void )
             }
 
             
-//            static uint32_t cntr = 0;
             unsigned char btn = 0;
-//            // Blink the LED
-//            if (cntr++ == 100000)
-//            {
-//                BSP_LEDToggle(LED_NUMBER);
-//                cntr = 0;
-//            }
             
             if (BSP_SWITCH_1StateGet() == BSP_SWITCH_STATE_PRESSED)
             {
