@@ -1002,7 +1002,7 @@
       <Template dnOrder="0">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3</Path>
-        <Checksum dnOrder="2">7BD9F3E49EA6AE39EB84E09BC8D83039</Checksum>
+        <Checksum dnOrder="2">222D08359BD7DEC2A1D4C7A0EFE7F101</Checksum>
         <ProjectFileChecksum dnOrder="3">7832A5831C310A97E88B3E42CF1141FF</ProjectFileChecksum>
       </Template>
       <Template dnOrder="1">
@@ -1017,7 +1017,7 @@
       <Template dnOrder="3">
         <Name dnOrder="0">system_interrupt.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3</Path>
-        <Checksum dnOrder="2">A8A1E7A0A9B5912069A53CCE7D3A0E9C</Checksum>
+        <Checksum dnOrder="2">7FF9333B68F7AFE207EC03F445AAD7C7</Checksum>
       </Template>
       <Template dnOrder="4">
         <Name dnOrder="0">bsp.h</Name>
@@ -1061,12 +1061,12 @@
       <Template dnOrder="12">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3</Path>
-        <Checksum dnOrder="2">679EEEC607B9DD41DF595D9BB8B1C77A</Checksum>
+        <Checksum dnOrder="2">BD7C2089EE62E8D17EA1EC55EFA7880D</Checksum>
       </Template>
       <Template dnOrder="13">
         <Name dnOrder="0">sys_ports_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3/framework/system/ports/src</Path>
-        <Checksum dnOrder="2">EC4F5008B40492C9E852FEC4263A6446</Checksum>
+        <Checksum dnOrder="2">6468BF0F316615E09F6ED864D36D5CAB</Checksum>
       </Template>
       <Template dnOrder="14">
         <Name dnOrder="0">app.h</Name>

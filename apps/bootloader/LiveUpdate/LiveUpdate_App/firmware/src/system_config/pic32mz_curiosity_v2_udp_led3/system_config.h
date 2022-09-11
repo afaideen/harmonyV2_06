@@ -116,7 +116,7 @@ extern "C" {
 #define SYS_PORT_C_ODC          0x0000
 #define SYS_PORT_C_CNPU         0x8000
 #define SYS_PORT_C_CNPD         0x0000
-#define SYS_PORT_C_CNEN         0x0000
+#define SYS_PORT_C_CNEN         0x8000
 
 #define SYS_PORT_D_ANSEL        0x0100
 #define SYS_PORT_D_TRIS         0xFFFF

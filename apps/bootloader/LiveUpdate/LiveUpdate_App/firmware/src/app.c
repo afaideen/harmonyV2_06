@@ -106,8 +106,21 @@ int APP_Bootloader_ForceEvent(void)
     return (1);
 }
 
-/* TODO:  Add any necessary callback functions.
-*/
+void HandleBtnTask(void)
+{
+    if(BSP_SWITCH_4StateGet() == BSP_SWITCH_STATE_PRESSED)
+    {
+        /* Turn ON LED */
+        BSP_LED_1On();
+        BSP_LED_2Off();
+    }
+    else
+    {
+        /* Turn OFF LED */
+        BSP_LED_2On();
+        BSP_LED_1Off();
+    }
+}
 
 // *****************************************************************************
 // *****************************************************************************
@@ -158,7 +171,7 @@ void APP_Initialize ( void )
         SYS_CONSOLE_MESSAGE("\n\r####### Send new binary from host tool to program in BANK 1 #######\n\r");
     }
     
-
+    
 }
 
 

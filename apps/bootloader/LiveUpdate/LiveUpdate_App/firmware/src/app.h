@@ -199,6 +199,7 @@ void APP_Initialize ( void );
 void APP_Tasks( void );
 
 void Enter_App(unsigned char btn);
+void HandleBtnTask(void);
 
 extern APP_DATA appData;
 #endif /* _APP_H */
