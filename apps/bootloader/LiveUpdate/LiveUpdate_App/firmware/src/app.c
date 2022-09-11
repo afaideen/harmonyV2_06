@@ -64,6 +64,8 @@ void bootloader_NvmUpdateFlashSerial(uint32_t addr);
 
 bool APP_TIMER_Expired_ms(uint32_t * timer, uint32_t mseconds);
 bool APP_TIMER_Set(uint32_t * timer);
+void CORETIMER_DelayUs ( uint32_t delay_us);
+void CORETIMER_DelayMs ( uint32_t delay_ms);
 
 
 // *****************************************************************************
@@ -198,7 +200,7 @@ void APP_Tasks ( void )
         
             if (appInitialized)
             {
-                
+                CORETIMER_DelayMs(1);
                 appData.state = APP_STATE_SERVICE_TASKS;
             }
             break;
