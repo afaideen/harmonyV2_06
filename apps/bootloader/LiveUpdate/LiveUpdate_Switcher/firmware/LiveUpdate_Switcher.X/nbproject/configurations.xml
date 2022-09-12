@@ -343,7 +343,6 @@
                        displayName="udp_pic32mz_ef_curiosity_v2"
                        projectFiles="true">
           <itemPath>../src/system_config/udp_pic32mz_ef_curiosity_v2/btl_mz.ld</itemPath>
-          <itemPath>../src/system_config/udp_pic32mz_ef_curiosity_v2/switcher.ld</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="udp_pic32mz_ef_sk" projectFiles="true">
           <itemPath>../src/system_config/udp_pic32mz_ef_sk/btl_mz.ld</itemPath>
@@ -4658,9 +4657,6 @@
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="lastid" value=""/>
         <property key="memories.configurationmemory" value="true"/>
         <property key="memories.dataflash" value="true"/>
         <property key="memories.eeprom" value="true"/>
@@ -6043,9 +6039,6 @@
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="lastid" value=""/>
         <property key="memories.configurationmemory" value="true"/>
         <property key="memories.dataflash" value="true"/>
         <property key="memories.eeprom" value="true"/>
@@ -6242,7 +6235,7 @@
                         CT="1"
                         CN="pic32mz_curiosity_v2_udp_led3"
                         AC="true"
-                        BL="true"
+                        BL="false"
                         WD="../../../LiveUpdate_App/firmware/LiveUpdate_App.X"
                         BC="${MAKE}  -f Makefile CONF=pic32mz_curiosity_v2_udp_led3"
                         DBC="${MAKE}  -f Makefile CONF=pic32mz_curiosity_v2_udp_led3 TYPE_IMAGE=DEBUG_RUN"
@@ -6379,24 +6372,6 @@
         </C32Global>
       </item>
       <item path="../../../../../../framework/system/dma/sys_dma_definitions.h"
-            ex="true"
-            overriding="false">
-        <C32>
-        </C32>
-        <C32-AR>
-        </C32-AR>
-        <C32-AS>
-        </C32-AS>
-        <C32-CO>
-        </C32-CO>
-        <C32-LD>
-        </C32-LD>
-        <C32CPP>
-        </C32CPP>
-        <C32Global>
-        </C32Global>
-      </item>
-      <item path="../src/system_config/udp_pic32mz_ef_curiosity_v2/switcher.ld"
             ex="true"
             overriding="false">
         <C32>
@@ -7227,7 +7202,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="69960"/>
+        <property key="heap-size" value="64960"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -7592,6 +7567,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_Switcher/firmware/LiveUpdate_Switcher.X/debug/udp_pic32mz_ef_curiosity_v2/LiveUpdate_Switcher_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

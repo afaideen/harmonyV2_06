@@ -66,7 +66,7 @@ bool APP_TIMER_Expired_ms(uint32_t * timer, uint32_t mseconds);
 bool APP_TIMER_Set(uint32_t * timer);
 void CORETIMER_DelayUs ( uint32_t delay_us);
 void CORETIMER_DelayMs ( uint32_t delay_ms);
-
+BSP_SWITCH_STATE APP_SWITCH_Pressed(uint32_t *t, BSP_SWITCH sw, uint32_t t_debouce);
 
 // *****************************************************************************
 // *****************************************************************************
@@ -130,11 +130,19 @@ void HandleBtnTask(void)
 // *****************************************************************************
 // *****************************************************************************
 
+void APP_TimerCallback( uintptr_t context, uint32_t alarmCount )
+{
+    static uint8_t count = 0;
+    appData.tmrIntTriggered = true;
+    BSP_LED_2Toggle();
+    count++;
+    if(count >= 5){
+        appData.tmrIntTriggered = false;
+        DRV_TMR_Stop(appData.tmrHandle);
+        
+    }
 
-/* TODO:  Add any necessary local functions.
-*/
-
-
+}
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Initialization and State Machine Functions
@@ -153,6 +161,9 @@ void APP_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
     appData.state = APP_STATE_INIT;
+    appData.tmrIntTriggered = false;
+//    appData.tmrHandle = DRV_TMR_Open(DRV_TMR_INDEX_0, 0);
+    appData.tmrHandle = DRV_TMR_Open(DRV_TMR_INDEX_1, DRV_IO_INTENT_READWRITE);
     
     // Register the bootloader callbacks
     BOOTLOADER_ForceBootloadRegister(APP_Bootloader_ForceEvent);
@@ -188,6 +199,10 @@ void APP_Initialize ( void )
 void APP_Tasks ( void )
 {
     static uint32_t t1 = 0;
+    static uint32_t t_sw1 = 0;
+    static uint32_t t_sw2 = 0;
+//    uint32_t* t_ptrsw1 = &t_sw1;
+//    uint32_t *t_ptrsw2 = &t_sw2;
 
     /* Check the application's current state. */
     switch ( appData.state )
@@ -202,6 +217,17 @@ void APP_Tasks ( void )
             {
                 CORETIMER_DelayMs(1);
                 appData.state = APP_STATE_SERVICE_TASKS;
+                
+                //How do i get 390625 value?
+                //256 Tcy --> 1 ticks
+                //1 Tcy --> 1/256 ticks
+                //
+                //1/100M --> 1/256 ticks
+                //1s --> 1/256 * 100M = 390625
+                //0.5s --> 1/256 * 100M/2 = 195312.5 = 195312
+                DRV_TMR_AlarmRegister(appData.tmrHandle, 390625, true, 0, APP_TimerCallback);
+                DRV_TMR_AlarmEnable(appData.tmrHandle, true);
+                DRV_TMR_Start(appData.tmrHandle);
             }
             break;
         }
@@ -209,7 +235,7 @@ void APP_Tasks ( void )
         case APP_STATE_SERVICE_TASKS:
         {
            
-            if( APP_TIMER_Expired_ms(&t1, 100) )            
+            if( APP_TIMER_Expired_ms(&t1, 50) )            
             {
                 APP_TIMER_Set(&t1);
                 BSP_LEDToggle(LED_NUMBER);
@@ -217,32 +243,20 @@ void APP_Tasks ( void )
             }
 
             
-            unsigned char btn = 0;
-            
-            if (BSP_SWITCH_1StateGet() == BSP_SWITCH_STATE_PRESSED)
+            if( APP_SWITCH_Pressed(&t_sw1, BSP_SWITCH_1, 200) == BSP_SWITCH_STATE_PRESSED )
             {
-                while (BSP_SWITCH_1StateGet() == BSP_SWITCH_STATE_PRESSED)
-                {
-                    btn = 1;
-                }
-//                Enter_App(btn);    
-                
+//                Enter_App(1);
+                BSP_LED_1Toggle();
+                BSP_LED_2Off();
             }
-            else if (BSP_SWITCH_2StateGet() == BSP_SWITCH_STATE_PRESSED)
+            else if(APP_SWITCH_Pressed(&t_sw2, BSP_SWITCH_2, 200) == BSP_SWITCH_STATE_PRESSED )
             {
-                while (BSP_SWITCH_2StateGet() == BSP_SWITCH_STATE_PRESSED)
-                {
-                    btn = 2;
-                }
+//                Enter_App(2);
+                BSP_LED_1Off();
+                BSP_LED_2Toggle();
+            }
 
-                
-            }
-            
-            if(btn)
-            {
-                
-                Enter_App(btn);
-            }
+        
 
             break;
         }

@@ -139,6 +139,16 @@ const DRV_TMR_INIT drvTmr0InitData =
     .interruptSource = DRV_TMR_INTERRUPT_SOURCE_IDX0,
     .asyncWriteEnable = false,
 };
+const DRV_TMR_INIT drvTmr1InitData =
+{
+    .moduleInit.sys.powerState = DRV_TMR_POWER_STATE_IDX1,
+    .tmrId = DRV_TMR_PERIPHERAL_ID_IDX1,
+    .clockSource = DRV_TMR_CLOCK_SOURCE_IDX1,
+    .prescale = DRV_TMR_PRESCALE_IDX1,
+    .mode = DRV_TMR_OPERATION_MODE_IDX1,
+    .interruptSource = DRV_TMR_INTERRUPT_SOURCE_IDX1,
+    .asyncWriteEnable = false,
+};
 // <editor-fold defaultstate="collapsed" desc="DRV_USB Initialization Data">
 /******************************************************
  * USB Driver Initialization
@@ -846,10 +856,13 @@ void SYS_Initialize ( void* data )
     sysObj.drvMiim = DRV_MIIM_Initialize(DRV_MIIM_INDEX_0, (const SYS_MODULE_INIT  * const)&drvMiimInitData);
 
     sysObj.drvTmr0 = DRV_TMR_Initialize(DRV_TMR_INDEX_0, (SYS_MODULE_INIT *)&drvTmr0InitData);
+    sysObj.drvTmr1 = DRV_TMR_Initialize(DRV_TMR_INDEX_1, (SYS_MODULE_INIT *)&drvTmr1InitData);
 
 
     SYS_INT_VectorPrioritySet(INT_VECTOR_T1, INT_PRIORITY_LEVEL1);
     SYS_INT_VectorSubprioritySet(INT_VECTOR_T1, INT_SUBPRIORITY_LEVEL0);
+    SYS_INT_VectorPrioritySet(INT_VECTOR_T3, INT_PRIORITY_LEVEL1);
+    SYS_INT_VectorSubprioritySet(INT_VECTOR_T3, INT_SUBPRIORITY_LEVEL0);
  
  
      /* Initialize USB Driver */ 

@@ -17,27 +17,27 @@ c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(strlen.o)
                               build/udp_pic32mz_ef_curiosity_v2/production/_ext/593738990/helpers.o (strlen)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (_bootstrap_exception_handler)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (_bootstrap_exception_handler)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (_on_reset)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (_on_reset)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (_on_bootstrap)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (_on_bootstrap)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-nmi-handler.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (_nmi_handler)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (_nmi_handler)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_data_init.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (__pic32_data_init)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (__pic32_data_init)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_cache.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (__pic32_init_cache)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (__pic32_init_cache)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_tlb_ebi_sqi.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (__pic32_tlb_init_ebi_sqi)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (__pic32_tlb_init_ebi_sqi)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(general-exception.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (_general_exception_context)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (_general_exception_context)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (_cache_err_exception_context)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (_cache_err_exception_context)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(simple-tlb-refill-exception.o)
-                              C:\Users\afaid\AppData\Local\Temp\cccprBRK.o (_simple_tlb_refill_exception_context)
+                              C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o (_simple_tlb_refill_exception_context)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
-                              C:\Users\afaid\AppData\Local\Temp\ccAOqfw8.o (_DefaultInterrupt)
+                              C:\Users\afaid\AppData\Local\Temp\ccv3xGar.o (_DefaultInterrupt)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
                               c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o) (_cache_err_exception_handler)
 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
@@ -616,8 +616,8 @@ section                    address  length [bytes]      (dec)  Description
 Dynamic Data-Memory Reservation
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-heap                    0x80000d08        0x11148       69960  Reserved for heap 
-stack                   0x80011e68        0x6e188      450952  Reserved for stack 
+heap                    0x80000d08         0xfdc0       64960  Reserved for heap 
+stack                   0x80010ae0        0x6f510      455952  Reserved for stack 
 
         --------------------------------------------------------------------------
 
@@ -1411,19 +1411,19 @@ Discarded input sections
  .data          0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\vector_offset_init.o
  .bss           0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\vector_offset_init.o
  .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\vector_offset_init.o
- .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
- .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
- .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
- .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
- .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccZdvorN.o
- .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccZdvorN.o
- .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccZdvorN.o
- .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\ccZdvorN.o
- .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccAOqfw8.o
- .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccAOqfw8.o
- .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccAOqfw8.o
- .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\ccAOqfw8.o
- .discard       0x00000000        0x4 C:\Users\afaid\AppData\Local\Temp\ccAOqfw8.o
+ .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
+ .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
+ .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
+ .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
+ .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cciFE1do.o
+ .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cciFE1do.o
+ .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\cciFE1do.o
+ .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\cciFE1do.o
+ .text          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccv3xGar.o
+ .data          0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccv3xGar.o
+ .bss           0x00000000        0x0 C:\Users\afaid\AppData\Local\Temp\ccv3xGar.o
+ .reginfo       0x00000000       0x18 C:\Users\afaid\AppData\Local\Temp\ccv3xGar.o
+ .discard       0x00000000        0x4 C:\Users\afaid\AppData\Local\Temp\ccv3xGar.o
  .text          0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
  .data          0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
  .bss           0x00000000        0x0 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
@@ -2139,16 +2139,16 @@ END GROUP
 
 .reset          0xbfc00000      0x1c4
  *(.reset)
- .reset         0xbfc00000       0x18 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
+ .reset         0xbfc00000       0x18 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
                 0xbfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0xbfc00018      0x1ac C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
+                0xbfc00018      0x1ac C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
                 0xbfc00018                _startup
 
 .bev_excpt      0xbfc00380       0x10
  *(.bev_handler)
- .bev_handler   0xbfc00380       0x10 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
+ .bev_handler   0xbfc00380       0x10 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
 
 .cache_init     0xbfc004b0      0x1fc
  *(.cache_init)
@@ -2165,17 +2165,17 @@ END GROUP
                 0x9fc01000       0x10
  *(.simple_tlb_refill_vector)
  .simple_tlb_refill_vector
-                0x9fc01000       0x10 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
+                0x9fc01000       0x10 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
 
 .cache_err_excpt
                 0x9fc01100       0x10
  *(.cache_err_vector)
  .cache_err_vector
-                0x9fc01100       0x10 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
+                0x9fc01100       0x10 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
 
 .app_excpt      0x9fc01180       0x10
  *(.gen_handler)
- .gen_handler   0x9fc01180       0x10 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
+ .gen_handler   0x9fc01180       0x10 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
 
 .vectors        0x9fc01200       0x58
                 0x00000210                __vector_offset_0 = DEFINED (__vector_dispatch_0)?(. - _ebase_address):__vector_offset_default
@@ -3930,10 +3930,10 @@ END GROUP
                 0x9fc1ffff                . = ((ORIGIN (protected_reg3) + 0xc000) - 0x1)
  *fill*         0x9fc14000     0xbfff ff
                 0x9fc1ffff        0x1 BYTE 0xff
-                0x00011148                _min_heap_size = 0x11148
-LOAD C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
-LOAD C:\Users\afaid\AppData\Local\Temp\ccZdvorN.o
-LOAD C:\Users\afaid\AppData\Local\Temp\ccAOqfw8.o
+                0x0000fdc0                _min_heap_size = 0xfdc0
+LOAD C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
+LOAD C:\Users\afaid\AppData\Local\Temp\cciFE1do.o
+LOAD C:\Users\afaid\AppData\Local\Temp\ccv3xGar.o
 LOAD c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFM144\default_isr_vectors.o
 LOAD c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\pic32_software_reset.o
 LOAD c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a
@@ -3959,8 +3959,8 @@ LOAD data_init
 .reginfo        0x00000000       0x18
  .reginfo       0x00000000       0x18 c:/program files/microchip/xc32/v2.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\debug-exception-return.o
 
-.stack          0x80011e68       0x10
- .stack         0x80011e68       0x10 stack
+.stack          0x80010ae0       0x10
+ .stack         0x80010ae0       0x10 stack
 
 .__vector_offset_BF810540_data
                 0xbf810540      0x1b0
@@ -5489,7 +5489,7 @@ LOAD data_init
 .text.main_entry
                 0x9fc03ea8       0x54
  .text.main_entry
-                0x9fc03ea8       0x54 C:\Users\afaid\AppData\Local\Temp\cccprBRK.o
+                0x9fc03ea8       0x54 C:\Users\afaid\AppData\Local\Temp\cc7t5JXE.o
                 0x9fc03edc                __crt0_exit
 
 .text.SYS_CLK_PeripheralFrequencyGet

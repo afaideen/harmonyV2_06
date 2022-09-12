@@ -111,9 +111,11 @@ typedef enum
 typedef struct
 {
     /* The application's current state */
-    APP_STATES state;
+    APP_STATES      state;
 
-    uint8_t     fw_bank_running;
+    uint8_t         fw_bank_running;
+    DRV_HANDLE      tmrHandle;
+    bool            tmrIntTriggered;
 
 } APP_DATA;
 

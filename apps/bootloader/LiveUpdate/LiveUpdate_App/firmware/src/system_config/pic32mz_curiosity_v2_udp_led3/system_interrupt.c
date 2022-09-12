@@ -80,6 +80,10 @@ void __ISR(_TIMER_1_VECTOR, ipl1AUTO) IntHandlerDrvTmrInstance0(void)
 {
     DRV_TMR_Tasks(sysObj.drvTmr0);
 }
+void __ISR(_TIMER_3_VECTOR, ipl1AUTO) IntHandlerDrvTmrInstance1(void)
+{
+    DRV_TMR_Tasks(sysObj.drvTmr1);
+}
  void __ISR(_USB_VECTOR, ipl4AUTO) _IntHandlerUSBInstance0(void)
 {
     DRV_USBHS_Tasks_ISR(sysObj.drvUSBObject);
