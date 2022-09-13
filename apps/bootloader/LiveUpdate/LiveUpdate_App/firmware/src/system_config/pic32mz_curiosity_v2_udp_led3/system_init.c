@@ -60,7 +60,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 /*** DEVCFG0 ***/
 
 #pragma config DEBUG =      ON
-#pragma config JTAGEN =     OFF
+#pragma config JTAGEN =     ON
 #pragma config ICESEL =     ICS_PGx1
 #pragma config TRCEN =      OFF
 #pragma config BOOTISA =    MIPS32
@@ -104,10 +104,10 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #pragma config USERID =     0xffff
 #pragma config FMIIEN =     OFF
 #pragma config FETHIO =     ON
-#pragma config PGL1WAY =    ON
-#pragma config PMDL1WAY =   ON
-#pragma config IOL1WAY =    ON
-#pragma config FUSBIDIO =   ON
+#pragma config PGL1WAY =    OFF
+#pragma config PMDL1WAY =   OFF
+#pragma config IOL1WAY =    OFF
+#pragma config FUSBIDIO =   OFF
 
 /*** BF1SEQ0 ***/
 

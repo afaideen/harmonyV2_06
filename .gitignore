@@ -4,3 +4,5 @@
 /apps/bootloader/LiveUpdate/LiveUpdate_Switcher/firmware/LiveUpdate_Switcher.X/.generated_files/
 /apps/bootloader/LiveUpdate/LiveUpdate_Switcher/firmware/LiveUpdate_Switcher.X/build/
 /apps/bootloader/LiveUpdate/LiveUpdate_Switcher/firmware/LiveUpdate_Switcher.X/debug/
+/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/LiveUpdate_App.X/dist/
+/apps/bootloader/LiveUpdate/LiveUpdate_Switcher/firmware/LiveUpdate_Switcher.X/dist/
