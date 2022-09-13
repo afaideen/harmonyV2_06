@@ -1,9 +1,9 @@
 /*******************************************************************************
   MPLAB Harmony Application Source File
-  
+
   Company:
     Microchip Technology Inc.
-  
+
   File Name:
     app.c
 
@@ -11,8 +11,8 @@
     This file contains the source code for the MPLAB Harmony application.
 
   Description:
-    This file contains the source code for the MPLAB Harmony application.  It 
-    implements the logic of the application's state machine and it may call 
+    This file contains the source code for the MPLAB Harmony application.  It
+    implements the logic of the application's state machine and it may call
     API routines of other MPLAB Harmony modules in the system, such as drivers,
     system services, and middleware.  However, it does not call any of the
     system interfaces (such as the "Initialize" and "Tasks" functions) of any of
@@ -49,7 +49,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Included Files 
+// Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
 
@@ -72,7 +72,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
   Remarks:
     This structure should be initialized by the APP_Initialize function.
-    
+
     Application strings and buffers are be defined outside this structure.
 */
 
@@ -86,13 +86,13 @@ APP_DATA appData;
 /******************************************************************************
   Function:
     static void APP_Bootloader_ForceEvent (void)
-    
+
    Remarks:
     Sets a trigger to be passed to force bootloader callback.
     Run bootloader if switch_1 is pressed OR
-    if memory location == '0xFFFFFFFF' otherwise jump to user 
+    if memory location == '0xFFFFFFFF' otherwise jump to user
     application.
-*/ 
+*/
 int APP_Bootloader_ForceEvent(void)
 {
     /* Check the switch press to trigger bootloader */
@@ -104,7 +104,7 @@ int APP_Bootloader_ForceEvent(void)
     /* Check the trigger memory location and return true/false. */
     if (*(uint32_t *)APP_RESET_ADDRESS == 0xFFFFFFFF)
         return (1);
-    
+
     return (0);
 }
 
@@ -143,13 +143,24 @@ void APP_Initialize ( void )
 
     // Register the bootloader callbacks
     BOOTLOADER_ForceBootloadRegister(APP_Bootloader_ForceEvent);
-    
+
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
 }
 
+/* Array in the RAM to store the data */
+#define ALIGN(x)                                 __attribute__((coherent, aligned(x)));
+#define SIZE_DATABUFF                           0x1000 //0x400 = 1024, 0x1000 = 4096
 
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D07D000
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D001000 X
+#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D010000
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D001000   X
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D009000    X
+#define APP_NVM_MYMEMORY_ADDRESS                   (KVA0_TO_KVA1((unsigned int *) NVM_MYMEMORY_ADDRESS))
+unsigned int myMemory[SIZE_DATABUFF] __attribute__((space(prog), address(NVM_MYMEMORY_ADDRESS))) = {0x12345678, 0x9ABCDEF0};
+ unsigned int *myptr = myMemory;
 /******************************************************************************
   Function:
     void APP_Tasks ( void )
@@ -168,11 +179,11 @@ void APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-       
-        
+
+
             if (appInitialized)
             {
-            
+
                 appData.state = APP_STATE_SERVICE_TASKS;
             }
             break;
@@ -187,12 +198,16 @@ void APP_Tasks ( void )
                 BSP_LEDToggle(BTL_LED);
                 cntr = 0;
             }
-        
+            if(myMemory[512 - 1] == 512 - 1)
+            {
+                BSP_LED_2On();
+            }
+
             break;
         }
 
         /* TODO: implement your application state machine.*/
-        
+
 
         /* The default state should never be executed. */
         default:
@@ -203,7 +218,7 @@ void APP_Tasks ( void )
     }
 }
 
- 
+
 
 /*******************************************************************************
  End of File
