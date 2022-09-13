@@ -90,7 +90,22 @@ BSP_SWITCH_STATE APP_SWITCH_Pressed(uint32_t *t, BSP_SWITCH sw, uint32_t t_debou
 */
 
 APP_DATA    appData;
+    /* Array in the RAM to store the data */
+#define ALIGN(x)                                 __attribute__((coherent, aligned(x)));
+#define SIZE_DATABUFF                           0x1000 //0x400 = 1024, 0x1000 = 4096
+uint32_t databuff[SIZE_DATABUFF] ALIGN(16);
 
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D07D000
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D001000 X
+#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D010000 
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D001000   X
+//#define     NVM_MYMEMORY_ADDRESS                    (unsigned int)0x9D009000    X
+#define APP_NVM_MYMEMORY_ADDRESS                   (KVA0_TO_KVA1((unsigned int *) NVM_MYMEMORY_ADDRESS))
+unsigned int myMemory[SIZE_DATABUFF] __attribute__((space(prog), address(NVM_MYMEMORY_ADDRESS))) = {0x12345678, 0x9ABCDEF0};
+ unsigned int *myptr = myMemory;
+
+// This is how you can get uninitialized array pointing to my_space
+// extern const char my_reserved_flash_addr[];
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -159,6 +174,8 @@ void APP_TimerCallback( uintptr_t context, uint32_t alarmCount )
 
 void APP_Initialize ( void )
 {
+    unsigned int x;
+//    unsigned int y;
     /* Place the App state machine in its initial state. */
     appData.state = APP_STATE_INIT;
     appData.tmrIntTriggered = false;
@@ -184,6 +201,16 @@ void APP_Initialize ( void )
         SYS_CONSOLE_MESSAGE("\n\r####### Send new binary from host tool to program in BANK 1 #######\n\r");
     }
     
+    //Flash nvm driver
+    appData.flashHandle = DRV_FLASH_Open(DRV_FLASH_INDEX_0, intent);
+//    y = sizeof(databuff);
+    //0x400 = 1024
+    for (x = 0; x < SIZE_DATABUFF; x++)
+    {
+        databuff[x] = x;
+    }
+  
+    Nop();
     
 }
 
@@ -199,6 +226,7 @@ void APP_Initialize ( void )
 void APP_Tasks ( void )
 {
     static uint32_t t1 = 0;
+    static uint32_t t2 = 0;
     static uint32_t t_sw1 = 0;
     static uint32_t t_sw2 = 0;
 //    uint32_t* t_ptrsw1 = &t_sw1;
@@ -228,14 +256,40 @@ void APP_Tasks ( void )
                 DRV_TMR_AlarmRegister(appData.tmrHandle, 390625, true, 0, APP_TimerCallback);
                 DRV_TMR_AlarmEnable(appData.tmrHandle, true);
                 DRV_TMR_Start(appData.tmrHandle);
+                
+                //Flash nvm
+                /* Erase the page which consist of the row to be written */
+                Nop();
+//                DRV_FLASH_ErasePage(appData.flashHandle, (uint32_t)KVA0_TO_KVA1((unsigned int *) &myMemory[0]));//3072 locations will be erased
+//                DRV_FLASH_ErasePage(appData.flashHandle, (uint32_t)&myMemory[0] );//3072 locations will be erased
+                DRV_FLASH_ErasePage(appData.flashHandle, (uint32_t)APP_NVM_MYMEMORY_ADDRESS );//3072 locations will be erased
+                while(DRV_FLASH_IsBusy(appData.flashHandle))
+                    Nop();
+                Nop();
+                
+//                DRV_FLASH_WriteQuadWord(appData.flashHandle, (uint32_t)&myMemory[0], &databuff[0]); //4 locations only will be written          
+////                DRV_FLASH_WriteWord(appData.flashHandle, (uint32_t)&myMemory[5], databuff[5]);//1 location only will be written!
+                DRV_FLASH_WriteRow(appData.flashHandle, (uint32_t)&myMemory[0], &databuff[0]);//512 locations only will be written
+                while(DRV_FLASH_IsBusy(appData.flashHandle))
+                    Nop();
+                Nop();
+                
             }
             break;
         }
 
         case APP_STATE_SERVICE_TASKS:
         {
-           
-            if( APP_TIMER_Expired_ms(&t1, 50) )            
+            if(myMemory[512 - 1] == 512 - 1)
+            {
+                if( APP_TIMER_Expired_ms(&t2, 250) )            
+                {
+                    APP_TIMER_Set(&t2);
+                    BSP_LED_1Toggle();
+                    
+                }
+            }
+            if( APP_TIMER_Expired_ms(&t1, 100) )            
             {
                 APP_TIMER_Set(&t1);
                 BSP_LEDToggle(LED_NUMBER);
@@ -245,13 +299,13 @@ void APP_Tasks ( void )
             
             if( APP_SWITCH_Pressed(&t_sw1, BSP_SWITCH_1, 200) == BSP_SWITCH_STATE_PRESSED )
             {
-//                Enter_App(1);
+                Enter_App(1);
                 BSP_LED_1Toggle();
                 BSP_LED_2Off();
             }
             else if(APP_SWITCH_Pressed(&t_sw2, BSP_SWITCH_2, 200) == BSP_SWITCH_STATE_PRESSED )
             {
-//                Enter_App(2);
+                Enter_App(2);
                 BSP_LED_1Off();
                 BSP_LED_2Toggle();
             }

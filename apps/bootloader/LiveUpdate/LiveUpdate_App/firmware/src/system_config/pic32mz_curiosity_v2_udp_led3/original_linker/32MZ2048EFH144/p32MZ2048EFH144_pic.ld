@@ -1,154 +1,179 @@
 /*--------------------------------------------------------------------------
- * MPLAB XC Compiler -  PIC32MZ Application linker script
- *
+ * MPLAB XC Compiler -  PIC32MZ2048EFH144 linker script
+ * Build date : Feb 07 2020
+ * 
+ * Copyright (c) 2020, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ * All rights reserved.
+ * 
  * This software is developed by Microchip Technology Inc. and its
  * subsidiaries ("Microchip").
- *
+ * 
  * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are
+ * modification, are permitted provided that the following conditions are 
  * met:
- *
+ * 
  * 1.      Redistributions of source code must retain the above copyright
  *         notice, this list of conditions and the following disclaimer.
- * 2.      Redistributions in binary form must reproduce the above
- *         copyright notice, this list of conditions and the following
- *         disclaimer in the documentation and/or other materials provided
+ * 2.      Redistributions in binary form must reproduce the above 
+ *         copyright notice, this list of conditions and the following 
+ *         disclaimer in the documentation and/or other materials provided 
  *         with the distribution.
  * 3.      Microchip's name may not be used to endorse or promote products
- *         derived from this software without specific prior written
+ *         derived from this software without specific prior written 
  *         permission.
- *
+ * 
  * THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED
  * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS FOR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * MERCHANTABILITY AND FITNESS FOR PURPOSE ARE DISCLAIMED. IN NO EVENT 
  * SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
  * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS;
  * OR BUSINESS INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
  * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *-------------------------------------------------------------------------*/
+ * 
+ */
 
-
-/* Custom linker script, for applications programmed through a bootloader */
+/* Default linker script, for position independent executables */
 
 /*  NOTE: This single-file linker script replaces the two-file system used
- *  for older PIC32 devices.
+ *  for older PIC32 devices. 
  */
 
 OUTPUT_FORMAT("elf32-tradlittlemips")
 OUTPUT_ARCH(pic32mx)
 ENTRY(_reset)
-/*
- * Provide for a minimum stack and heap size
- * - _min_stack_size - represents the minimum space that must be made
- *                     available for the stack.  Can be overridden from
- *                     the command line using the linker's --defsym option.
- * - _min_heap_size  - represents the minimum space that must be made
- *                     available for the heap.  Must be specified on
- *                     the command line using the linker's --defsym option.
- */
-EXTERN (_min_stack_size _min_heap_size)
-
 /*************************************************************************
- * Processor-specific object file.  Contains SFR definitions.
+ * Legacy processor-specific object file.  Contains SFR definitions.
+ * The SFR definitions are now provided in a processor-specific *.S
+ * assembly source file rather than the processor.o file. Use the new
+ * .S file rather than this processor.o file for new projects. MPLAB XC32
+ * v2.10 and later will automatically link the new .S file.
  *************************************************************************/
-INPUT("processor.o")
+#if defined(__XC32_VERSION__) && (__XC32_VERSION__ < 2100)
+OPTIONAL("processor.o")
+#endif
 
-/*************************************************************************
- * Processor-specific peripheral libraries are optional
- *************************************************************************/
-OPTIONAL("libmchp_peripheral.a")
+SECTIONS
+{
+  /* Read-only sections, merged into text segment: */
+  . = SEGMENT_START("text-segment", 0) + SIZEOF_HEADERS;
+  .reginfo        : { *(.reginfo) }
+  .note.gnu.build-id : { *(.note.gnu.build-id) }
+  .dynamic        : { *(.dynamic) }
+  .hash           : { *(.hash) }
+  .gnu.hash       : { *(.gnu.hash) }
+  .dynsym         : { *(.dynsym) }
+  .dynstr         : { *(.dynstr) }
+  .gnu.version    : { *(.gnu.version) }
+  .gnu.version_d  : { *(.gnu.version_d) }
+  .gnu.version_r  : { *(.gnu.version_r) }
+  .rel.dyn        :
+  {
+    *(.rel.init)
+    *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+    *(.rel.fini)
+    *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+    *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+    *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+    *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+    *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+    *(.rel.ctors)
+    *(.rel.dtors)
+    *(.rel.got)
+    *(.rel.dyn)
+    *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+    *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+    *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+    *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+    *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+    *(.rel.iplt)
+  }
+  .rela.dyn       :
+  {
+    *(.rela.init)
+    *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+    *(.rela.fini)
+    *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+    *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+    *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+    *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+    *(.rela.ctors)
+    *(.rela.dtors)
+    *(.rela.got)
+    *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+    *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+    *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+    *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+    *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+    *(.rela.iplt)
+  }
+  .rel.plt        :
+  {
+    *(.rel.plt)
+  }
+  .rela.plt       :
+  {
+    *(.rela.plt)
+  }
+}
 
 
 /*************************************************************************
  * Vector-offset initialization
  *************************************************************************/
-OPTIONAL("vector_offset_init.o")
+OPTIONAL("vector_offset_init_pic.o")
 
-/*************************************************************************
- * For interrupt vector handling
- *************************************************************************/
-PROVIDE(_vector_spacing = 0x00000001);
-PROVIDE(_ebase_address = 0x9D001000);
 
-/*************************************************************************
- * Memory Address Equates
- * _RESET_ADDR                    -- Reset Vector
- * _BEV_EXCPT_ADDR                -- Boot exception Vector
- * _DBG_EXCPT_ADDR                -- In-circuit Debugging Exception Vector
- * _SIMPLE_TLB_REFILL_EXCPT_ADDR  -- Simple TLB-Refill Exception Vector
- * _CACHE_ERR_EXCPT_ADDR          -- Cache-error Exception Vector
- * _GEN_EXCPT_ADDR                -- General Exception Vector
- *************************************************************************/
-
-_RESET_ADDR                    = 0x9D000000 + 0x10;
-_SIMPLE_TLB_REFILL_EXCPT_ADDR  = _ebase_address + 0;
-_CACHE_ERR_EXCPT_ADDR          = _ebase_address + 0x100;
-_GEN_EXCPT_ADDR                = _ebase_address + 0x180;
-
-/*************************************************************************
- * Memory Regions
- *
- * Memory regions without attributes cannot be used for orphaned sections.
- * Only sections specifically assigned to these regions can be allocated
- * into these regions.
- *
- * The Debug exception vector is located at 0x9FC00480.
- * The config_<address> sections are used to locate the config words at
- * their absolute addresses.
- *************************************************************************/
-MEMORY
-{
-    kseg1_boot_mem          : ORIGIN = 0x9D000000 + 0x10, LENGTH = 0x480
-    kseg0_program_mem  (rx) : ORIGIN = 0x9D000000 + 0x10 + 0x480, LENGTH = (0x200000 / 2) - 0x480 - 0x0 /* All C files will be located here */
-    kseg0_boot_mem          : ORIGIN = 0x9D000000 + 0x10, LENGTH = 0x0   
- /*   my_reserved_flash  (r)  : ORIGIN = 0x9D010000, LENGTH = 0x1000*/	/* Name your memory with desired size */
-  kseg0_data_mem       (w!x)  : ORIGIN = 0x80000000, LENGTH = 0x80000
-  sfrs                        : ORIGIN = 0xBF800000, LENGTH = 0x100000
-  kseg2_ebi_data_mem          : ORIGIN = 0xC0000000, LENGTH = 0x4000000
-  kseg2_sqi_data_mem          : ORIGIN = 0xD0000000, LENGTH = 0x4000000
-  kseg3_ebi_data_mem          : ORIGIN = 0xE0000000, LENGTH = 0x4000000
-  kseg3_sqi_data_mem          : ORIGIN = 0xF0000000, LENGTH = 0x4000000
-}
-
-/*************************************************************************
- * Configuration-word sections. Map the config-pragma input sections to
- * absolute-address output sections.
- *************************************************************************/
 SECTIONS
 {
   /* Boot Sections */
-  .reset _RESET_ADDR :
+  .reset :
   {
     KEEP(*(.reset))
     KEEP(*(.reset.startup))
-  } > kseg1_boot_mem
-  .simple_tlb_refill_excpt _SIMPLE_TLB_REFILL_EXCPT_ADDR :
+  }
+  .bev_excpt :
+  {
+    KEEP(*(.bev_handler))
+  }
+  .cache_init :
+  {
+    *(.cache_init)
+    *(.cache_init.*)
+  }
+
+  .simple_tlb_refill_excpt :
   {
     KEEP(*(.simple_tlb_refill_vector))
-  } > kseg0_program_mem
-  .cache_err_excpt _CACHE_ERR_EXCPT_ADDR :
+  }
+  .cache_err_excpt :
   {
     KEEP(*(.cache_err_vector))
-  } > kseg0_program_mem
-  .app_excpt _GEN_EXCPT_ADDR :
+  }
+  .app_excpt :
   {
     KEEP(*(.gen_handler))
-  } > kseg0_program_mem
+  }
 
-    /* Define what sections should be placed in my_reserved_flash memory */
- /*   .my_space : {
-    my_reserved_flash_addr = .;		*/				/* This variable can be used in 'C' or assembly using extern */
- /*    *(.my_space)
-    } > my_reserved_flash*/
+.plt            : { *(.plt) }
+.iplt           : { *(.iplt) }
+
+/*************************************************************************
+ * Symbols used for interrupt-vector table generation
+ * To override the defaults, define the _ebase_address symbol using
+ * the --defsym linker opt as shown in this example:
+ *   xc32-gcc src.c -Wl,--defsym=_ebase_address=0x9D001000
+ *************************************************************************/
+PROVIDE(_vector_spacing = 0x0001);
+PROVIDE(_ebase_address = ABSOLUTE(.));
+
 
   /* Interrupt vector table with vector offsets */
   .vectors _ebase_address + 0x200 :
   {
-    /*  Symbol __vector_offset_n points to .vector_n if it exists,
+    /*  Symbol __vector_offset_n points to .vector_n if it exists, 
      *  otherwise points to the default handler. The
      *  vector_offset_init.o module then provides a .data section
      *  containing values used to initialize the vector-offset SFRs
@@ -669,29 +694,28 @@ SECTIONS
     /* Default interrupt handler */
     __vector_offset_default = . - _ebase_address;
     KEEP(*(.vector_default))
-  } > kseg0_program_mem
+  }
 
   /*  The startup code is in the .reset.startup section.
    *  Keep this here for backwards compatibility with older
    *  C32 v1.xx releases.
    */
-  .startup ORIGIN(kseg0_boot_mem) :
+  .startup :
   {
     KEEP(*(.startup))
-  } > kseg0_boot_mem
-  /* Code Sections - Note that input sections *(.text) and *(.text.*)
-  ** are not mapped here. The best-fit allocator locates them,
-  ** so that .text may flow around absolute sections as needed.
-  */
+  }
   .text :
   {
-    *(.stub .gnu.linkonce.t.*)
+    *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+    *(.text.exit .text.exit.*)
+    *(.text.hot .text.hot.*)
+    *(.text .stub .text.* .gnu.linkonce.t.*)
     KEEP (*(.text.*personality*))
     *(.mips16.fn.*)
     *(.mips16.call.*)
     *(.gnu.warning)
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   /* Global-namespace object initialization */
   .init   :
   {
@@ -701,19 +725,19 @@ SECTIONS
     KEEP (*crtend.o(.init))
     KEEP (*crtn.o(.init))
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   .fini   :
   {
     KEEP (*(.fini))
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   .preinit_array   :
   {
     PROVIDE_HIDDEN (__preinit_array_start = .);
     KEEP (*(.preinit_array))
     PROVIDE_HIDDEN (__preinit_array_end = .);
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   .init_array   :
   {
     PROVIDE_HIDDEN (__init_array_start = .);
@@ -721,7 +745,7 @@ SECTIONS
     KEEP (*(.init_array))
     PROVIDE_HIDDEN (__init_array_end = .);
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   .fini_array   :
   {
     PROVIDE_HIDDEN (__fini_array_start = .);
@@ -729,7 +753,7 @@ SECTIONS
     KEEP (*(.fini_array))
     PROVIDE_HIDDEN (__fini_array_end = .);
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   .ctors   :
   {
     /* XC32 uses crtbegin.o to find the start of
@@ -751,7 +775,7 @@ SECTIONS
     KEEP (*(SORT(.ctors.*)))
     KEEP (*(.ctors))
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   .dtors   :
   {
     KEEP (*crtbegin.o(.dtors))
@@ -760,14 +784,14 @@ SECTIONS
     KEEP (*(SORT(.dtors.*)))
     KEEP (*(.dtors))
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   /* Read-only sections */
   .rodata   :
   {
     *( .gnu.linkonce.r.*)
     *(.rodata1)
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   /*
    * Small initialized constant global and static data can be placed in the
    * .sdata2 section.  This is different from .sdata, which contains small
@@ -777,7 +801,7 @@ SECTIONS
   {
     *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   /*
    * Uninitialized constant global and static data (i.e., variables which will
    * always be zero).  Again, this is different from .sbss, which contains
@@ -787,36 +811,61 @@ SECTIONS
   {
     *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
     . = ALIGN(4) ;
-  } >kseg0_program_mem
+  }
   .eh_frame_hdr   :
   {
     *(.eh_frame_hdr)
-  } >kseg0_program_mem
+  }
     . = ALIGN(4) ;
   .eh_frame   : ONLY_IF_RO
   {
     KEEP (*(.eh_frame))
-  } >kseg0_program_mem
+  }
     . = ALIGN(4) ;
   .gcc_except_table   : ONLY_IF_RO
   {
     *(.gcc_except_table .gcc_except_table.*)
-  } >kseg0_program_mem
+  }
     . = ALIGN(4) ;
+  .gnu_extab   : ONLY_IF_RO
+  {
+    *(.gnu_extab*)
+  }
+    . = ALIGN(4) ;
+  .dbg_data (NOLOAD) :
+  {
+    . += (DEFINED (_DEBUGGER) ? 0x200 : 0x0);
+    /* Additional data memory required for DSPr2 registers */
+    . += (DEFINED (_DEBUGGER) ? 0x80 : 0x0);
+    /* Additional data memory required for FPU64 registers */
+    . += (DEFINED (_DEBUGGER) ? 0x100 : 0x0);
+  }
+  . = .;
+  _gp = ALIGN(4) ;
+  .got ALIGN(4) :
+  {
+    *(.got)
+    . = ALIGN(4) ;
+  }
   .jcr   :
   {
     KEEP (*(.jcr))
     . = ALIGN(4) ;
-  } >kseg0_data_mem
+  }
   .eh_frame    : ONLY_IF_RW
   {
     KEEP (*(.eh_frame))
-  } >kseg0_data_mem
+    KEEP (*(.eh_frame.*))
+  }
     . = ALIGN(4) ;
   .gcc_except_table    : ONLY_IF_RW
   {
     *(.gcc_except_table .gcc_except_table.*)
-  } >kseg0_data_mem
+  }
+    . = ALIGN(4) ;
+  .gnu_extab      : ONLY_IF_RW { *(.gnu_extab) }
+    . = ALIGN(4) ;
+  .exception_ranges   : ONLY_IF_RW { *(.exception_ranges .exception_ranges*) }
     . = ALIGN(4) ;
   /* Persistent data - Use the new C 'persistent' attribute instead. */
   .persist   :
@@ -826,26 +875,17 @@ SECTIONS
     *(.pbss .pbss.*)
     . = ALIGN(4) ;
     _persist_end = .;
-  } >kseg0_data_mem
-  /*
-   *  Note that input sections named .data* are not mapped here.
-   *  The best-fit allocator locates them, so that they may flow
-   *  around absolute sections as needed.
-   */
+  }
+  .data.rel.ro : { *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*) *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*) }
+  .got.plt        : { *(.got.plt) }
   .data   :
   {
-    *( .gnu.linkonce.d.*)
+    *(.data .data.* .gnu.linkonce.d.*)
     SORT(CONSTRUCTORS)
-    *(.data1)
     . = ALIGN(4) ;
-  } >kseg0_data_mem
+  }
+  .data1          : { *(.data1) }
   . = .;
-  _gp = ALIGN(16) + 0x7ff0;
-  .got ALIGN(4) :
-  {
-    *(.got.plt) *(.got)
-    . = ALIGN(4) ;
-  } >kseg0_data_mem /* AT>kseg0_program_mem */
   /*
    * Note that 'small' data sections are still mapped in the linker
    * script. This ensures that they are grouped together for
@@ -863,15 +903,15 @@ SECTIONS
     *(.sdata .sdata.* .gnu.linkonce.s.*)
     . = ALIGN(4) ;
     _sdata_end = . ;
-  } >kseg0_data_mem
+  }
   .lit8           :
   {
     *(.lit8)
-  } >kseg0_data_mem
+  }
   .lit4           :
   {
     *(.lit4)
-  } >kseg0_data_mem
+  }
   . = ALIGN (4) ;
   _data_end = . ;
   _bss_begin = . ;
@@ -883,7 +923,7 @@ SECTIONS
     *(.scommon)
     _sbss_end = . ;
     . = ALIGN(4) ;
-  } >kseg0_data_mem
+  }
   /*
    *  Align here to ensure that the .bss section occupies space up to
    *  _end.  Align after .bss to ensure correct alignment even if the
@@ -897,29 +937,16 @@ SECTIONS
   .bss     :
   {
     *(.dynbss)
+    *(.bss .bss.* .gnu.linkonce.b.*)
     *(COMMON)
    /* Align here to ensure that the .bss section occupies space up to
       _end.  Align after .bss to ensure correct alignment even if the
       .bss section disappears because there are no input sections. */
    . = ALIGN(. != 0 ? 4 : 1);
-  } >kseg0_data_mem
+  }
   . = ALIGN(4) ;
   _end = . ;
   _bss_end = . ;
-  /*
-   *  The heap and stack are best-fit allocated by the linker after other
-   *  data and bss sections have been allocated.
-   */
-  /*
-   * RAM functions go at the end of our stack and heap allocation.
-   * Alignment of 2K required by the boundary register (BMXDKPBA).
-   *
-   * RAM functions are now allocated by the linker. The linker generates
-   * _ramfunc_begin and _bmxdkpba_address symbols depending on the
-   * location of RAM functions.
-   */
-  _bmxdudba_address = LENGTH(kseg0_data_mem) ;
-  _bmxdupba_address = LENGTH(kseg0_data_mem) ;
     /* The .pdr section belongs in the absolute section */
     /DISCARD/ : { *(.pdr) }
   .gptab.sdata : { *(.gptab.data) *(.gptab.sdata) }
@@ -940,7 +967,7 @@ SECTIONS
   .stab.index    0 : { *(.stab.index) }
   .stab.indexstr 0 : { *(.stab.indexstr) }
   .comment       0 : { *(.comment) }
-  /* DWARF debug sections used by MPLAB X for source-level debugging.
+  /* DWARF debug sections used by MPLAB X for source-level debugging. 
      Symbols in the DWARF debugging sections are relative to the beginning
      of the section so we begin them at 0.  */
   /* DWARF 1 */
@@ -967,129 +994,8 @@ SECTIONS
   .debug_varnames  0 : { *(.debug_varnames) }
   .debug_pubtypes 0 : { *(.debug_pubtypes) }
   .debug_ranges   0 : { *(.debug_ranges) }
-  /DISCARD/ : { *(.rel.dyn) }
   .gnu.attributes 0 : { KEEP (*(.gnu.attributes)) }
   /DISCARD/ : { *(.note.GNU-stack) }
   /DISCARD/ : { *(.note.GNU-stack) *(.gnu_debuglink) *(.gnu.lto_*) *(.discard) }
-  /DISCARD/ : { *(._debug_exception) }
-  /DISCARD/ : { *(.config_*) }
-
-    
 }
-
-/*************************************************************************
- *                    L1 Cache initialization symbols
- *************************************************************************/
-/*
- *  Provide virtual addresses for cache initialization
- *  These symbols are used by the pic32_init_cache.o module to set up
- *  the cache at startup.
- */
-EXTERN  (__pic32_init_cache_program_base_addr)
-PROVIDE (__pic32_init_cache_program_base_addr = 0x9D000000) ;
-EXTERN  (__pic32_init_cache_data_base_addr)
-PROVIDE (__pic32_init_cache_data_base_addr = 0x80000000) ;
-
-/*************************************************************************
- *   TLB-Based MMU Initialization section for EBI/SQI memory regions
- *************************************************************************/
-/*
- *  Provide virtual and physical addresses of the SQI for TLB initialization
- *  These symbols are used below to create a table, which is in turn used to
- *  initialize the TLB at startup.
- */
-EXTERN  (__pic32_init_sqi_kseg2_virtual_base_addr)
-PROVIDE (__pic32_init_sqi_kseg2_virtual_base_addr = 0xD0000000) ;
-EXTERN  (__pic32_init_sqi_kseg2_physical_base_addr)
-PROVIDE (__pic32_init_sqi_kseg2_physical_base_addr = 0x30000000) ;
-EXTERN  (__pic32_init_sqi_kseg2_entrylo0_bitset)
-PROVIDE (__pic32_init_sqi_kseg2_entrylo0_bitset = 0x1F) ;
-
-/*  ENTRYHI = VPN2<31:13> VPN2X<12:11> 0<10:8> ASID<7:0> */
-__pic32_tlb_0_entryhi  = __pic32_init_sqi_kseg2_virtual_base_addr ;
-
-
-/*  Create one 64MB page table entry consisting of two 32MB physical pages.
- *  ENTRYLO0 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0>
- *  Shift __pic32_init_sqi_kseg3_physical_base_addr to PFN.
- *  Bitwise-OR the other bits of ENTRYLO0.
- */
-__pic32_tlb_0_entrylo0 = (__pic32_init_sqi_kseg2_physical_base_addr >> 6) | __pic32_init_sqi_kseg2_entrylo0_bitset ;
-
-
-/*  ENTRYLO1 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0> */
-__pic32_tlb_0_entrylo1 = __pic32_tlb_0_entrylo0 | 0x00080000 ;
-
-EXTERN  (__pic32_init_sqi_kseg3_virtual_base_addr)
-PROVIDE (__pic32_init_sqi_kseg3_virtual_base_addr = 0xF0000000) ;
-EXTERN  (__pic32_init_sqi_kseg3_physical_base_addr)
-PROVIDE (__pic32_init_sqi_kseg3_physical_base_addr = 0x30000000) ;
-EXTERN  (__pic32_init_sqi_kseg3_entrylo0_bitset)
-PROVIDE (__pic32_init_sqi_kseg3_entrylo0_bitset = 0x17) ;
-
-/*  ENTRYHI = VPN2<31:13> VPN2X<12:11> 0<10:8> ASID<7:0> */
-__pic32_tlb_1_entryhi  = __pic32_init_sqi_kseg3_virtual_base_addr ;
-
-
-/*  Create one 64MB page table entry consisting of two 32MB physical pages.
- *  ENTRYLO0 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0>
- *  Shift __pic32_init_sqi_kseg3_physical_base_addr to PFN.
- *  Bitwise-OR the other bits of ENTRYLO0.
- */
-__pic32_tlb_1_entrylo0 = (__pic32_init_sqi_kseg3_physical_base_addr >> 6) | __pic32_init_sqi_kseg3_entrylo0_bitset ;
-
-
-/*  ENTRYLO1 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0> */
-__pic32_tlb_1_entrylo1 = __pic32_tlb_1_entrylo0 | 0x00080000 ;
-/*
- *  Provide virtual and physical addresses of the EBI for TLB initialization
- *  These symbols are used below to create a table, which is in turn used to
- *  initialize the TLB at startup.
- */
-EXTERN  (__pic32_init_ebi_kseg2_virtual_base_addr)
-PROVIDE (__pic32_init_ebi_kseg2_virtual_base_addr = 0xC0000000) ;
-EXTERN  (__pic32_init_ebi_kseg2_physical_base_addr)
-PROVIDE (__pic32_init_ebi_kseg2_physical_base_addr = 0x20000000) ;
-EXTERN  (__pic32_init_ebi_kseg2_entrylo0_bitset)
-PROVIDE (__pic32_init_ebi_kseg2_entrylo0_bitset = 0x1F) ;
-
-/*  ENTRYHI = VPN2<31:13> VPN2X<12:11> 0<10:8> ASID<7:0> */
-__pic32_tlb_2_entryhi  = __pic32_init_ebi_kseg2_virtual_base_addr ;
-
-
-/*  Create one 64MB page table entry consisting of two 32MB physical pages.
- *  ENTRYLO0 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0>
- *  Shift __pic32_init_sqi_kseg3_physical_base_addr to PFN.
- *  Bitwise-OR the other bits of ENTRYLO0.
- */
-__pic32_tlb_2_entrylo0 = (__pic32_init_ebi_kseg2_physical_base_addr >> 6) | __pic32_init_ebi_kseg2_entrylo0_bitset ;
-
-
-/*  ENTRYLO1 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0> */
-__pic32_tlb_2_entrylo1 = __pic32_tlb_2_entrylo0 | 0x00080000 ;
-
-EXTERN  (__pic32_init_ebi_kseg3_virtual_base_addr)
-PROVIDE (__pic32_init_ebi_kseg3_virtual_base_addr = 0xE0000000) ;
-EXTERN  (__pic32_init_ebi_kseg3_physical_base_addr)
-PROVIDE (__pic32_init_ebi_kseg3_physical_base_addr = 0x20000000) ;
-EXTERN  (__pic32_init_ebi_kseg3_entrylo0_bitset)
-PROVIDE (__pic32_init_ebi_kseg3_entrylo0_bitset = 0x17) ;
-
-/*  ENTRYHI = VPN2<31:13> VPN2X<12:11> 0<10:8> ASID<7:0> */
-__pic32_tlb_3_entryhi  = __pic32_init_ebi_kseg3_virtual_base_addr ;
-
-
-/*  Create one 64MB page table entry consisting of two 32MB physical pages.
- *  ENTRYLO0 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0>
- *  Shift __pic32_init_sqi_kseg3_physical_base_addr to PFN.
- *  Bitwise-OR the other bits of ENTRYLO0.
- */
-__pic32_tlb_3_entrylo0 = (__pic32_init_ebi_kseg3_physical_base_addr >> 6) | __pic32_init_ebi_kseg3_entrylo0_bitset ;
-
-
-/*  ENTRYLO1 = RI<31> XI<30> 0<29:26> PFN<25:6> C<5:3> D<2> V<1> G<0> */
-__pic32_tlb_3_entrylo1 = __pic32_tlb_3_entrylo0 | 0x00080000 ;
-
-
-
 

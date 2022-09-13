@@ -116,6 +116,7 @@ typedef struct
     uint8_t         fw_bank_running;
     DRV_HANDLE      tmrHandle;
     bool            tmrIntTriggered;
+    DRV_HANDLE      flashHandle;
 
 } APP_DATA;
 
