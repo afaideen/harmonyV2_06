@@ -973,8 +973,6 @@ SECTIONS
   /DISCARD/ : { *(.note.GNU-stack) *(.gnu_debuglink) *(.gnu.lto_*) *(.discard) }
   /DISCARD/ : { *(._debug_exception) }
   /DISCARD/ : { *(.config_*) }
-
-    
 }
 
 /*************************************************************************

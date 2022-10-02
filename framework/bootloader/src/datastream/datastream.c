@@ -45,7 +45,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "system/reset/sys_reset.h"
 #include "app.h"
 
-
+uint32_t APP_CalculateCrcCustom(uint8_t *data, uint32_t len);
 
 SYS_MODULE_OBJ  datastreamModule;
 extern BOOTLOADER_DATA bootloaderData __attribute__((coherent, aligned(16)));
@@ -219,6 +219,7 @@ void Bootloader_ProcessBuffer( BOOTLOADER_DATA *handle )
             
             memcpy(&Length, &handle->data->buffers.buff2[5], sizeof(Length));
             crc = APP_CalculateCrc((uint8_t *)(Address), Length);
+//            crc = APP_CalculateCrcCustom((uint8_t *)(Address), Length);
 //#if defined(BOOTLOADER_LIVE_UPDATE_STATE_SAVE)
 //            crc = APP_CalculateCrc((uint8_t *)KVA0_TO_KVA1(Address + 
 //                    ((APP_FLASH_END_ADDRESS - APP_FLASH_BASE_ADDRESS) + 1)), Length);

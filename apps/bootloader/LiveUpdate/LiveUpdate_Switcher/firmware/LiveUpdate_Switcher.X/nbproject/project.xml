@@ -14,7 +14,7 @@
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects>
                 <make-dep-project>D:/Microchip/harmony/v2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/LiveUpdate_App.X</make-dep-project>
-                <make-dep-project>../../../LiveUpdate_App/firmware/LiveUpdate_App.X</make-dep-project>
+                <make-dep-project>D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/LiveUpdate_App.X</make-dep-project>
             </make-dep-projects>
             <sourceRootList>
                 <sourceRootElem>../src</sourceRootElem>

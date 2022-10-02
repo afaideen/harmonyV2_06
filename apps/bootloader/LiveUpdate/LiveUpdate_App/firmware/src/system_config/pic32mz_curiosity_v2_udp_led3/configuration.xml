@@ -650,350 +650,354 @@
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
       <File dnOrder="159">
+        <Name dnOrder="0">drv_flash.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/flash</Path>
+      </File>
+      <File dnOrder="160">
         <Name dnOrder="0">udp_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="160">
+      <File dnOrder="161">
         <Name dnOrder="0">drv_ethphy.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/driver/ethphy</Path>
       </File>
-      <File dnOrder="161">
+      <File dnOrder="162">
         <Name dnOrder="0">smtpc_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="162">
+      <File dnOrder="163">
         <Name dnOrder="0">sys_devcon.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/system/devcon/src</Path>
       </File>
-      <File dnOrder="163">
+      <File dnOrder="164">
         <Name dnOrder="0">hash_fnv.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="164">
+      <File dnOrder="165">
         <Name dnOrder="0">sys_random_local.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/random/src</Path>
       </File>
-      <File dnOrder="165">
+      <File dnOrder="166">
         <Name dnOrder="0">sys_tmr.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/tmr</Path>
       </File>
-      <File dnOrder="166">
+      <File dnOrder="167">
         <Name dnOrder="0">usb_host.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="167">
+      <File dnOrder="168">
         <Name dnOrder="0">udp.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="168">
+      <File dnOrder="169">
         <Name dnOrder="0">tcpip_notify.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="169">
+      <File dnOrder="170">
         <Name dnOrder="0">lldp_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="170">
+      <File dnOrder="171">
         <Name dnOrder="0">tcpip_helpers.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="171">
+      <File dnOrder="172">
         <Name dnOrder="0">usb_host_hub.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="172">
+      <File dnOrder="173">
         <Name dnOrder="0">sys_random.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/random</Path>
       </File>
-      <File dnOrder="173">
+      <File dnOrder="174">
         <Name dnOrder="0">http.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="174">
+      <File dnOrder="175">
         <Name dnOrder="0">osal_impl_basic.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
       </File>
-      <File dnOrder="175">
+      <File dnOrder="176">
         <Name dnOrder="0">tcpip_manager_control.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="176">
+      <File dnOrder="177">
         <Name dnOrder="0">osal_definitions.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
       </File>
-      <File dnOrder="177">
+      <File dnOrder="178">
         <Name dnOrder="0">ddns.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="178">
+      <File dnOrder="179">
         <Name dnOrder="0">tcpip_heap.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="179">
+      <File dnOrder="180">
         <Name dnOrder="0">tcpip_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="180">
+      <File dnOrder="181">
         <Name dnOrder="0">aes_cfb.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="181">
+      <File dnOrder="182">
         <Name dnOrder="0">aes_ecb.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="182">
+      <File dnOrder="183">
         <Name dnOrder="0">usb_device_cdc_acm.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
       </File>
-      <File dnOrder="183">
+      <File dnOrder="184">
         <Name dnOrder="0">datastream_udp.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/bootloader/src/datastream</Path>
       </File>
-      <File dnOrder="184">
+      <File dnOrder="185">
         <Name dnOrder="0">sys_devcon_local.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/devcon/src</Path>
       </File>
-      <File dnOrder="185">
+      <File dnOrder="186">
         <Name dnOrder="0">hash_fnv.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="186">
+      <File dnOrder="187">
         <Name dnOrder="0">drv_ethmac.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/ethmac</Path>
       </File>
-      <File dnOrder="187">
+      <File dnOrder="188">
         <Name dnOrder="0">usb_device_cdc.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
       </File>
-      <File dnOrder="188">
+      <File dnOrder="189">
         <Name dnOrder="0">lldp.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="189">
+      <File dnOrder="190">
         <Name dnOrder="0">driver_common.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver</Path>
       </File>
-      <File dnOrder="190">
+      <File dnOrder="191">
         <Name dnOrder="0">drv_extphy_smsc9303.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/ethphy/src/dynamic</Path>
       </File>
-      <File dnOrder="191">
+      <File dnOrder="192">
         <Name dnOrder="0">sys_tmr.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/system/tmr/src</Path>
       </File>
-      <File dnOrder="192">
+      <File dnOrder="193">
         <Name dnOrder="0">tcp_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="193">
+      <File dnOrder="194">
         <Name dnOrder="0">drv_usbhs.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/driver/usb/usbhs/src/dynamic</Path>
       </File>
-      <File dnOrder="194">
+      <File dnOrder="195">
         <Name dnOrder="0">drv_ethmac.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/driver/ethmac</Path>
       </File>
-      <File dnOrder="195">
+      <File dnOrder="196">
         <Name dnOrder="0">ddns_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="196">
+      <File dnOrder="197">
         <Name dnOrder="0">ftp.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="197">
+      <File dnOrder="198">
         <Name dnOrder="0">drv_ethmac_lib.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/driver/ethmac</Path>
       </File>
-      <File dnOrder="198">
+      <File dnOrder="199">
         <Name dnOrder="0">dhcp_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="199">
+      <File dnOrder="200">
         <Name dnOrder="0">http_net.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="200">
+      <File dnOrder="201">
         <Name dnOrder="0">sntp.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="201">
+      <File dnOrder="202">
         <Name dnOrder="0">tcpip_announce_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="202">
+      <File dnOrder="203">
         <Name dnOrder="0">sys_clk.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
       </File>
-      <File dnOrder="203">
+      <File dnOrder="204">
         <Name dnOrder="0">dhcps.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="204">
+      <File dnOrder="205">
         <Name dnOrder="0">dnss_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="205">
+      <File dnOrder="206">
         <Name dnOrder="0">tcpip_heap_internal.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="206">
+      <File dnOrder="207">
         <Name dnOrder="0">dns.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="207">
+      <File dnOrder="208">
         <Name dnOrder="0">aes_ctr.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src/crypto</Path>
       </File>
-      <File dnOrder="208">
+      <File dnOrder="209">
         <Name dnOrder="0">drv_tmr.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/driver/tmr/src/dynamic</Path>
       </File>
-      <File dnOrder="209">
+      <File dnOrder="210">
         <Name dnOrder="0">drv_extphy_smsc8740.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/ethphy/src/dynamic</Path>
       </File>
-      <File dnOrder="210">
+      <File dnOrder="211">
         <Name dnOrder="0">sys_int_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/int/src</Path>
       </File>
-      <File dnOrder="211">
+      <File dnOrder="212">
         <Name dnOrder="0">iperf.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="212">
+      <File dnOrder="213">
         <Name dnOrder="0">tcpip_ethernet.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="213">
+      <File dnOrder="214">
         <Name dnOrder="0">zero_conf_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="214">
+      <File dnOrder="215">
         <Name dnOrder="0">zero_conf_link_local_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="215">
+      <File dnOrder="216">
         <Name dnOrder="0">_eth_dcpt_lists.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/ethmac/src/dynamic</Path>
       </File>
-      <File dnOrder="216">
+      <File dnOrder="217">
         <Name dnOrder="0">drv_tmr_variant_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/tmr/src</Path>
       </File>
-      <File dnOrder="217">
+      <File dnOrder="218">
         <Name dnOrder="0">sntp_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="218">
+      <File dnOrder="219">
         <Name dnOrder="0">usb_billboard.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="219">
+      <File dnOrder="220">
         <Name dnOrder="0">nvm.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/bootloader/src</Path>
       </File>
-      <File dnOrder="220">
+      <File dnOrder="221">
         <Name dnOrder="0">drv_usbhs_variant_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbhs/src</Path>
       </File>
-      <File dnOrder="221">
+      <File dnOrder="222">
         <Name dnOrder="0">sys_console.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/system/console/src</Path>
       </File>
-      <File dnOrder="222">
+      <File dnOrder="223">
         <Name dnOrder="0">nvm.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/bootloader/src</Path>
       </File>
-      <File dnOrder="223">
+      <File dnOrder="224">
         <Name dnOrder="0">drv_ethphy.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/ethphy</Path>
       </File>
-      <File dnOrder="224">
+      <File dnOrder="225">
         <Name dnOrder="0">http_net_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="225">
+      <File dnOrder="226">
         <Name dnOrder="0">drv_extphy_ksz8061.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/ethphy/src/dynamic</Path>
       </File>
-      <File dnOrder="226">
+      <File dnOrder="227">
         <Name dnOrder="0">tftpc.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="227">
+      <File dnOrder="228">
         <Name dnOrder="0">ftp_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="228">
+      <File dnOrder="229">
         <Name dnOrder="0">usb_host_hub_interface.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="229">
+      <File dnOrder="230">
         <Name dnOrder="0">sys_ports.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/ports</Path>
       </File>
-      <File dnOrder="230">
+      <File dnOrder="231">
         <Name dnOrder="0">dnss.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="231">
+      <File dnOrder="232">
         <Name dnOrder="0">tcpip_reboot_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="232">
+      <File dnOrder="233">
         <Name dnOrder="0">usb_device_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb/src</Path>
       </File>
-      <File dnOrder="233">
+      <File dnOrder="234">
         <Name dnOrder="0">tftps.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip</Path>
       </File>
-      <File dnOrder="234">
+      <File dnOrder="235">
         <Name dnOrder="0">dhcpv6_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="235">
+      <File dnOrder="236">
         <Name dnOrder="0">drv_ethmac_local.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/ethmac/src</Path>
       </File>
-      <File dnOrder="236">
+      <File dnOrder="237">
         <Name dnOrder="0">drv_usbhs_local.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbhs/src</Path>
       </File>
-      <File dnOrder="237">
+      <File dnOrder="238">
         <Name dnOrder="0">drv_usbhs_device.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/driver/usb/usbhs/src/dynamic</Path>
       </File>
-      <File dnOrder="238">
+      <File dnOrder="239">
         <Name dnOrder="0">dhcpv6_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="239">
+      <File dnOrder="240">
         <Name dnOrder="0">ftp_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="240">
+      <File dnOrder="241">
         <Name dnOrder="0">sys_debug.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/system/debug/src</Path>
       </File>
-      <File dnOrder="241">
+      <File dnOrder="242">
         <Name dnOrder="0">oahash.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="242">
+      <File dnOrder="243">
         <Name dnOrder="0">http_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="243">
+      <File dnOrder="244">
         <Name dnOrder="0">telnet_manager.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="244">
+      <File dnOrder="245">
         <Name dnOrder="0">ipv6_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/tcpip/src</Path>
       </File>
-      <File dnOrder="245">
+      <File dnOrder="246">
         <Name dnOrder="0">usb_host_client_driver.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
@@ -1002,7 +1006,7 @@
       <Template dnOrder="0">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3</Path>
-        <Checksum dnOrder="2">BA4E73AB6E7B9426E6F1FC947BEFF5DE</Checksum>
+        <Checksum dnOrder="2">6D7ACCEB8105C2E944B2A895C30E2628</Checksum>
         <ProjectFileChecksum dnOrder="3">7832A5831C310A97E88B3E42CF1141FF</ProjectFileChecksum>
       </Template>
       <Template dnOrder="1">
@@ -1028,7 +1032,7 @@
       <Template dnOrder="5">
         <Name dnOrder="0">system_definitions.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3</Path>
-        <Checksum dnOrder="2">C14644843EC611F7B49B15B5D6D0D66A</Checksum>
+        <Checksum dnOrder="2">150D9201A0F582319EFAD40B38CFF5F0</Checksum>
       </Template>
       <Template dnOrder="6">
         <Name dnOrder="0">bsp.c</Name>
@@ -1039,6 +1043,7 @@
         <Name dnOrder="0">app_mz.ld</Name>
         <Path dnOrder="1">Linker&amp;#160;Files/system_config/pic32mz_curiosity_v2_udp_led3</Path>
         <Checksum dnOrder="2">BC100C05944E2F27E7B112A37F8B5C94</Checksum>
+        <ProjectFileChecksum dnOrder="3">CCE90DCC3B14A5208A10B2D2C6F13527</ProjectFileChecksum>
       </Template>
       <Template dnOrder="8">
         <Name dnOrder="0">system_exceptions.c</Name>
@@ -1051,27 +1056,37 @@
         <Checksum dnOrder="2">DDC6FBFA3FA40EA7F142E7A60C543A1F</Checksum>
       </Template>
       <Template dnOrder="10">
+        <Name dnOrder="0">drv_flash_static.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3/framework/driver/flash/src</Path>
+        <Checksum dnOrder="2">BBDC83597F25F136BD530D7F95BEE7F2</Checksum>
+      </Template>
+      <Template dnOrder="11">
         <Name dnOrder="0">app.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app</Path>
       </Template>
-      <Template dnOrder="11">
+      <Template dnOrder="12">
         <Name dnOrder="0">sys_reset.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3/framework/system/reset/src</Path>
         <Checksum dnOrder="2">BE66429899862E1E38250CA4006D5F46</Checksum>
       </Template>
-      <Template dnOrder="12">
+      <Template dnOrder="13">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3</Path>
-        <Checksum dnOrder="2">C85EFD39D2E65FC8DF9779DACD11FC81</Checksum>
+        <Checksum dnOrder="2">3C21FAE49D3121B83B0424C7556A7E44</Checksum>
       </Template>
-      <Template dnOrder="13">
+      <Template dnOrder="14">
         <Name dnOrder="0">sys_ports_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3/framework/system/ports/src</Path>
         <Checksum dnOrder="2">6468BF0F316615E09F6ED864D36D5CAB</Checksum>
       </Template>
-      <Template dnOrder="14">
+      <Template dnOrder="15">
         <Name dnOrder="0">app.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app</Path>
+      </Template>
+      <Template dnOrder="16">
+        <Name dnOrder="0">drv_flash_static.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mz_curiosity_v2_udp_led3/framework/driver/flash</Path>
+        <Checksum dnOrder="2">7612FC23AE86243D05F4B5B71DEEEAC8</Checksum>
       </Template>
     </Templates>
     <CompilerItems dnOrder="2">

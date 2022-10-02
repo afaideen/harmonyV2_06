@@ -117,6 +117,7 @@ typedef struct
     DRV_HANDLE      tmrHandle;
     bool            tmrIntTriggered;
     DRV_HANDLE      flashHandle;
+    DRV_HANDLE      handleUSART0;
 
 } APP_DATA;
 

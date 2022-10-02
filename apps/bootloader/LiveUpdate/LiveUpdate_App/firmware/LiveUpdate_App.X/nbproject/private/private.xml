@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="7">
+        <file>
+            <url>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/original_linker/32MZ2048EFM144/p32MZ2048EFM144.ld</url>
+            <bookmark id="2">
+                <name/>
+                <line>695</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/app.c</url>
+            <bookmark id="7">
+                <name/>
+                <line>102</line>
+                <key/>
+            </bookmark>
+            <bookmark id="5">
+                <name/>
+                <line>265</line>
+                <key/>
+            </bookmark>
+        </file>
         <file>
             <url>file:/D:/Microchip/harmony/v2_06/framework/bootloader/src/bootloader.c</url>
             <bookmark id="1">
@@ -9,19 +30,21 @@
                 <key/>
             </bookmark>
         </file>
+        <file>
+            <url>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/app_mz.ld</url>
+            <bookmark id="4">
+                <name/>
+                <line>106</line>
+                <key/>
+            </bookmark>
+            <bookmark id="6">
+                <name/>
+                <line>143</line>
+                <key/>
+            </bookmark>
+        </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/bsp/bsp.h</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_Switcher/firmware/src/system_config/udp_pic32mz_ef_curiosity_v2/system_config.h</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/main.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/system_init.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/app_helper.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/framework/bootloader/src/bootloader.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/app.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/system_config.h</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/bsp/bsp.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/live_update.ld</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

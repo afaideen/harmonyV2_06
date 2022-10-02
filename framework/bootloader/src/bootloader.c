@@ -390,6 +390,32 @@ uint32_t APP_CalculateCrc(uint8_t *data, uint32_t len)
 
     return (crc & 0xFFFF);
 }
+
+//uint32_t APP_CalculateCrcCustom(uint8_t *data, uint32_t len)
+//{
+//    uint32_t i, save_len;
+//    uint16_t crc = 0;
+//    save_len = 0;
+//    save_len++;
+//    save_len = len;
+//
+//    while(len--)
+//    {
+//        #if ( BOOTLOADER_LIVE_UPDATE_STATE_SAVE == 1 )
+//        SYS_CONSOLE_PRINT("\r\naddress = 0X%0x, data = %x", data, *data);
+//        #endif
+//        i = (crc >> 12) ^ (*data >> 4);
+//        crc = crc_table[i & 0x0F] ^ (crc << 4);
+//        i = (crc >> 12) ^ (*data >> 0);
+//        crc = crc_table[i & 0x0F] ^ (crc << 4);
+//        
+//        data++;
+//    }
+//    #if ( BOOTLOADER_LIVE_UPDATE_STATE_SAVE == 1 )
+//    SYS_CONSOLE_PRINT("\r\ncs = 0X%0x, len = %lu", crc, save_len);
+//    #endif
+//    return (crc & 0xFFFF);
+//}
 /******************************************************************************
   Function:
     SYS_MODULE_OBJ Bootloader_Initialize(const SYS_MODULE_INDEX   moduleIndex,

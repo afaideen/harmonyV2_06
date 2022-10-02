@@ -80,8 +80,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #pragma config FNOSC =      SPLL
 #pragma config DMTINTV =    WIN_127_128
 #pragma config FSOSCEN =    OFF
-#pragma config IESO =       ON
-#pragma config POSCMOD =    OFF
+#pragma config IESO =       OFF
+#pragma config POSCMOD =    EC
 #pragma config OSCIOFNC =   OFF
 #pragma config FCKSM =      CSDCMD
 #pragma config WDTPS =      PS1048576

@@ -182,9 +182,13 @@ void APP_Initialize ( void )
 //    appData.tmrHandle = DRV_TMR_Open(DRV_TMR_INDEX_0, 0);
     appData.tmrHandle = DRV_TMR_Open(DRV_TMR_INDEX_1, DRV_IO_INTENT_READWRITE);
     
+//    appData.handleUSART0 = DRV_USART_Open(0, DRV_IO_INTENT_READWRITE|DRV_IO_INTENT_NONBLOCKING);
+    
     // Register the bootloader callbacks
     BOOTLOADER_ForceBootloadRegister(APP_Bootloader_ForceEvent);
     SYS_CONSOLE_MESSAGE("APP_Initialize...\r\n");
+//    SYS_DEBUG_Message("APP_Initialize...\r\n");
+
     /* Check from which Bank the Application is running */
     if ((NVMCON & _NVMCON_PFSWAP_MASK) != _NVMCON_PFSWAP_MASK)
     {
@@ -260,8 +264,6 @@ void APP_Tasks ( void )
                 //Flash nvm
                 /* Erase the page which consist of the row to be written */
                 Nop();
-//                DRV_FLASH_ErasePage(appData.flashHandle, (uint32_t)KVA0_TO_KVA1((unsigned int *) &myMemory[0]));//3072 locations will be erased
-//                DRV_FLASH_ErasePage(appData.flashHandle, (uint32_t)&myMemory[0] );//3072 locations will be erased
                 DRV_FLASH_ErasePage(appData.flashHandle, (uint32_t)APP_NVM_MYMEMORY_ADDRESS );//3072 locations will be erased
                 while(DRV_FLASH_IsBusy(appData.flashHandle))
                     Nop();
@@ -273,6 +275,12 @@ void APP_Tasks ( void )
                 while(DRV_FLASH_IsBusy(appData.flashHandle))
                     Nop();
                 Nop();
+////                if(!DRV_USART_TransmitBufferIsFull(appData.handleUSART0))
+////                {
+//                    
+////                    DRV_USART_Write(appData.handleUSART0, "APP_Initialize...\r\n", sizeof(10));
+//                    DRV_USART_WriteByte(appData.handleUSART0, "R");
+////                }
                 
             }
             break;
@@ -289,7 +297,7 @@ void APP_Tasks ( void )
                     
                 }
             }
-            if( APP_TIMER_Expired_ms(&t1, 100) )            
+            if( APP_TIMER_Expired_ms(&t1, 1000) )            
             {
                 APP_TIMER_Set(&t1);
                 BSP_LEDToggle(LED_NUMBER);
@@ -299,13 +307,13 @@ void APP_Tasks ( void )
             
             if( APP_SWITCH_Pressed(&t_sw1, BSP_SWITCH_1, 200) == BSP_SWITCH_STATE_PRESSED )
             {
-                Enter_App(1);
+//                Enter_App(1);
                 BSP_LED_1Toggle();
                 BSP_LED_2Off();
             }
             else if(APP_SWITCH_Pressed(&t_sw2, BSP_SWITCH_2, 200) == BSP_SWITCH_STATE_PRESSED )
             {
-                Enter_App(2);
+//                Enter_App(2);
                 BSP_LED_1Off();
                 BSP_LED_2Toggle();
             }
