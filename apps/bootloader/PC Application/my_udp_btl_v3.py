@@ -457,7 +457,7 @@ def calculate_checksum(data):
     x1 = hex(ord(c[0]))
     x2 = hex(ord(c[1]))
     hexcrc = c[0] + c[1]
-    p = get_checksum_str(hexcrc)
+    p = get_checksum_str(hexcrc).zfill(4)
     E = 1
     print("crc16: OX%s, len: %d" % (p, data_len))
     return p, data_len
@@ -482,14 +482,14 @@ def main():
     conn_stream.send_request(CMD_READ_VERSION)
     version = conn_stream.read_response('\x01')
     print('Bootloader version: ' + hexlify(version).decode())
-    #
-    # print('Cmd Erase..')
-    # conn_stream.send_request(CMD_ERASE)
-    # r = conn_stream.read_response('\x02')
-    #
-    # print('Uploading..')
-    # upstats = upload(conn_stream, filename)
-    # print('Transmitted: %d packets (%d bytes), Received: %d packets (%d bytes)' % (upstats[0],upstats[1],upstats[2],upstats[3]))
+
+    print('Cmd Erase..')
+    conn_stream.send_request(CMD_ERASE)
+    r = conn_stream.read_response('\x02')
+
+    print('Uploading..')
+    upstats = upload(conn_stream, filename)
+    print('Transmitted: %d packets (%d bytes), Received: %d packets (%d bytes)' % (upstats[0],upstats[1],upstats[2],upstats[3]))
 
     print('Verifying..')
 
@@ -504,12 +504,16 @@ def main():
 
     conn_stream.send_request(CMD_VERIFY_CS + str_addr + str_size + crc_in_str)
     checksum = conn_stream.read_response('\04')
+    checksum_pic_calculated = convertByte2Str(checksum)
     print('CRC @%s[%s]: %s' % (addr, size, hexlify(checksum)))
 
-    print('Device jumping to app..')
-    conn_stream.send_request(CMD_JUMP_APP)
-    # r = conn_stream.read_response('\x05')
-    print('Device bootloaded successful..')
+    if checksum_pic_calculated == crc_in_str:
+        print('Checksum valid..Device jumping to app..')
+        conn_stream.send_request(CMD_JUMP_APP)
+        # r = conn_stream.read_response('\x05')
+        print('Device bootloaded successful..')
+    else:
+        print('Checksum invalid..')
     E = 1
 
 
