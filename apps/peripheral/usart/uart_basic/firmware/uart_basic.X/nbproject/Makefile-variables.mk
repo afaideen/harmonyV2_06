@@ -1,0 +1,42 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# pic32mx795_pim_e16 configuration
+CND_ARTIFACT_DIR_pic32mx795_pim_e16=dist/pic32mx795_pim_e16/production
+CND_ARTIFACT_NAME_pic32mx795_pim_e16=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mx795_pim_e16=dist/pic32mx795_pim_e16/production/uart_basic.X.production.hex
+# pic32mx_usb_sk2 configuration
+CND_ARTIFACT_DIR_pic32mx_usb_sk2=dist/pic32mx_usb_sk2/production
+CND_ARTIFACT_NAME_pic32mx_usb_sk2=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mx_usb_sk2=dist/pic32mx_usb_sk2/production/uart_basic.X.production.hex
+# pic32mz_ef_sk configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk=dist/pic32mz_ef_sk/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk=dist/pic32mz_ef_sk/production/uart_basic.X.production.hex
+# pic32mz_da_sk_intddr configuration
+CND_ARTIFACT_DIR_pic32mz_da_sk_intddr=dist/pic32mz_da_sk_intddr/production
+CND_ARTIFACT_NAME_pic32mz_da_sk_intddr=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_da_sk_intddr=dist/pic32mz_da_sk_intddr/production/uart_basic.X.production.hex
+# pic32mz_ef_sk_16b configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk_16b=dist/pic32mz_ef_sk_16b/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk_16b=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk_16b=dist/pic32mz_ef_sk_16b/production/uart_basic.X.production.hex
+# pic32mx795_pim_e16_freertos configuration
+CND_ARTIFACT_DIR_pic32mx795_pim_e16_freertos=dist/pic32mx795_pim_e16_freertos/production
+CND_ARTIFACT_NAME_pic32mx795_pim_e16_freertos=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mx795_pim_e16_freertos=dist/pic32mx795_pim_e16_freertos/production/uart_basic.X.production.hex
+# pic32mz_ef_sk_freertos configuration
+CND_ARTIFACT_DIR_pic32mz_ef_sk_freertos=dist/pic32mz_ef_sk_freertos/production
+CND_ARTIFACT_NAME_pic32mz_ef_sk_freertos=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_ef_sk_freertos=dist/pic32mz_ef_sk_freertos/production/uart_basic.X.production.hex
+# pic32mk_gp_db configuration
+CND_ARTIFACT_DIR_pic32mk_gp_db=dist/pic32mk_gp_db/production
+CND_ARTIFACT_NAME_pic32mk_gp_db=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mk_gp_db=dist/pic32mk_gp_db/production/uart_basic.X.production.hex
+# pic32mz_curiosity_v2 configuration
+CND_ARTIFACT_DIR_pic32mz_curiosity_v2=dist/pic32mz_curiosity_v2/production
+CND_ARTIFACT_NAME_pic32mz_curiosity_v2=uart_basic.X.production.hex
+CND_ARTIFACT_PATH_pic32mz_curiosity_v2=dist/pic32mz_curiosity_v2/production/uart_basic.X.production.hex
