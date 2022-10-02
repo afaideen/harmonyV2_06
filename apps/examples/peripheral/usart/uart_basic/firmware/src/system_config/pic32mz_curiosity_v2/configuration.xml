@@ -218,7 +218,7 @@
       <Template dnOrder="0">
         <Name dnOrder="0">drv_usart_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2/framework/driver/usart/src</Path>
-        <Checksum dnOrder="2">3917E75A3D51D39E13C9EE7A8F97C694</Checksum>
+        <Checksum dnOrder="2">5147A3DF9BA16906AC9829DF91D8EF2D</Checksum>
       </Template>
       <Template dnOrder="1">
         <Name dnOrder="0">sys_ports_static.c</Name>
@@ -233,7 +233,7 @@
       <Template dnOrder="3">
         <Name dnOrder="0">drv_usart_mapping.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2/framework/driver/usart/src</Path>
-        <Checksum dnOrder="2">9CD3E662EEA539EA00ABC2635EFAB393</Checksum>
+        <Checksum dnOrder="2">84D12D754B67B6F268A7243A5A473239</Checksum>
       </Template>
       <Template dnOrder="4">
         <Name dnOrder="0">main.c</Name>
@@ -267,7 +267,7 @@
       <Template dnOrder="10">
         <Name dnOrder="0">system_tasks.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2</Path>
-        <Checksum dnOrder="2">5A31E254EE506B94284C860CB46CA770</Checksum>
+        <Checksum dnOrder="2">CFD2369CB7439CF837DD27720236BCB7</Checksum>
       </Template>
       <Template dnOrder="11">
         <Name dnOrder="0">system_definitions.h</Name>
@@ -282,7 +282,7 @@
       <Template dnOrder="13">
         <Name dnOrder="0">system_interrupt.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2</Path>
-        <Checksum dnOrder="2">189322B43F454AFAD848348D784118AB</Checksum>
+        <Checksum dnOrder="2">BD2B95F48CB248C0252A933D35A73731</Checksum>
       </Template>
       <Template dnOrder="14">
         <Name dnOrder="0">app.c</Name>
@@ -296,12 +296,12 @@
       <Template dnOrder="16">
         <Name dnOrder="0">drv_usart_static_byte_model.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2/framework/driver/usart/src</Path>
-        <Checksum dnOrder="2">695A2DE3F3823E2D6BB4295880C4F371</Checksum>
+        <Checksum dnOrder="2">8B1F3ABA57A3DFCC5D4AECDA8838A337</Checksum>
       </Template>
       <Template dnOrder="17">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mz_curiosity_v2</Path>
-        <Checksum dnOrder="2">E75D066EF421C71642157EE118A0FF3E</Checksum>
+        <Checksum dnOrder="2">400D8E7B070D68B30557FEE659B0C1C0</Checksum>
       </Template>
       <Template dnOrder="18">
         <Name dnOrder="0">app.h</Name>
@@ -310,16 +310,16 @@
       <Template dnOrder="19">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mz_curiosity_v2</Path>
-        <Checksum dnOrder="2">1F250E51AEFD14BD971C48907E1C0FC5</Checksum>
+        <Checksum dnOrder="2">7D991168D7B42F30484BFC64DCD399A3</Checksum>
       </Template>
     </Templates>
     <CompilerItems dnOrder="2">
       <C32 dnOrder="0">
-        <Include dnOrder="0" value="D:\Microchip\harmony\v2_06\apps\examples\peripheral\usart\uart_basic\firmware\src"/>
-        <Include dnOrder="1" value="D:\Microchip\harmony\v2_06\apps\examples\peripheral\usart\uart_basic\firmware\src\system_config\pic32mz_curiosity_v2"/>
-        <Include dnOrder="2" value="D:\Microchip\harmony\v2_06\apps\examples\peripheral\usart\uart_basic\firmware\src\pic32mz_curiosity_v2"/>
-        <Include dnOrder="3" value="D:\Microchip\harmony\v2_06\framework"/>
-        <Include dnOrder="4" value="D:\Microchip\harmony\v2_06\apps\examples\peripheral\usart\uart_basic\firmware\src\system_config\pic32mz_curiosity_v2\framework"/>
+        <Include dnOrder="0" value="D:\github\microchip\harmonyV2_06\apps\examples\peripheral\usart\uart_basic\firmware\src"/>
+        <Include dnOrder="1" value="D:\github\microchip\harmonyV2_06\apps\examples\peripheral\usart\uart_basic\firmware\src\system_config\pic32mz_curiosity_v2"/>
+        <Include dnOrder="2" value="D:\github\microchip\harmonyV2_06\apps\examples\peripheral\usart\uart_basic\firmware\src\pic32mz_curiosity_v2"/>
+        <Include dnOrder="3" value="D:\github\microchip\harmonyV2_06\framework"/>
+        <Include dnOrder="4" value="D:\github\microchip\harmonyV2_06\apps\examples\peripheral\usart\uart_basic\firmware\src\system_config\pic32mz_curiosity_v2\framework"/>
         <Include dnOrder="5" value="../src/system_config/pic32mz_curiosity_v2/bsp"/>
       </C32>
     </CompilerItems>

@@ -68,6 +68,31 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // Section: System Interrupt Vector Functions
 // *****************************************************************************
 // *****************************************************************************
+ 
+void __ISR(_UART6_TX_VECTOR, ipl3AUTO) _IntHandlerDrvUsartTransmitInstance0(void)
+{
+    DRV_USART_TasksTransmit(sysObj.drvUsart0);
+}
+void __ISR(_UART6_RX_VECTOR, ipl3AUTO) _IntHandlerDrvUsartReceiveInstance0(void)
+{
+    DRV_USART_TasksReceive(sysObj.drvUsart0);
+}
+void __ISR(_UART6_FAULT_VECTOR, ipl3AUTO) _IntHandlerDrvUsartErrorInstance0(void)
+{
+    DRV_USART_TasksError(sysObj.drvUsart0);
+}
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
    void __ISR(_CHANGE_NOTICE_C_VECTOR, ipl1AUTO) _IntHandlerChangeNotification_PortC(void)
 {
     HandleBtnTask();   

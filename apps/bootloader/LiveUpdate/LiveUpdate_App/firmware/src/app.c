@@ -67,6 +67,7 @@ bool APP_TIMER_Set(uint32_t * timer);
 void CORETIMER_DelayUs ( uint32_t delay_us);
 void CORETIMER_DelayMs ( uint32_t delay_ms);
 BSP_SWITCH_STATE APP_SWITCH_Pressed(uint32_t *t, BSP_SWITCH sw, uint32_t t_debouce);
+extern void putsUART(const char* buffer);
 
 // *****************************************************************************
 // *****************************************************************************
@@ -130,12 +131,14 @@ void HandleBtnTask(void)
         /* Turn ON LED */
         BSP_LED_1On();
         BSP_LED_2Off();
+        putsUART("\r\nButton is pressed");
     }
     else
     {
         /* Turn OFF LED */
         BSP_LED_2On();
         BSP_LED_1Off();
+        putsUART("\r\nButton is released");
     }
 }
 
@@ -188,6 +191,7 @@ void APP_Initialize ( void )
     BOOTLOADER_ForceBootloadRegister(APP_Bootloader_ForceEvent);
     SYS_CONSOLE_MESSAGE("APP_Initialize...\r\n");
 //    SYS_DEBUG_Message("APP_Initialize...\r\n");
+    putsUART("UART static and dynamic initialized...\r\n");
 
     /* Check from which Bank the Application is running */
     if ((NVMCON & _NVMCON_PFSWAP_MASK) != _NVMCON_PFSWAP_MASK)

@@ -59,6 +59,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "system/tmr/sys_tmr.h"
 #include "driver/tmr/drv_tmr.h"
 #include "bootloader/src/bootloader.h"
+#include "driver/usart/drv_usart.h"
 #include "system/ports/sys_ports.h"
 #include "system/debug/sys_debug.h"
 #include "system/command/sys_command.h"
@@ -108,6 +109,7 @@ typedef struct
     SYS_MODULE_OBJ  drvTmr0;
     SYS_MODULE_OBJ  drvTmr1;
 
+    SYS_MODULE_OBJ  drvUsart0;
     SYS_MODULE_OBJ  sysDebug;
     SYS_MODULE_OBJ  sysConsole0;
     SYS_MODULE_OBJ  drvUSBObject;

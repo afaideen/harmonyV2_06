@@ -190,6 +190,7 @@
           <logicalFolder name="f1" displayName="usart" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h</itemPath>
+              <itemPath>../../../../../../framework/driver/usart/src/drv_usart_local.h</itemPath>
             </logicalFolder>
             <itemPath>../../../../../../framework/driver/usart/drv_usart.h</itemPath>
             <itemPath>../../../../../../framework/driver/usart/drv_usart_definitions.h</itemPath>
@@ -713,6 +714,15 @@
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
                 <itemPath>../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="usart" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../../../framework/driver/usart/src/dynamic/drv_usart.c</itemPath>
+                <itemPath>../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c</itemPath>
+                <itemPath>../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -1441,6 +1451,22 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../framework/driver/usb/drv_usb.h"
             ex="true"
@@ -6999,6 +7025,10 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
             ex="false"
             overriding="false">
@@ -7016,6 +7046,18 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../framework/driver/usb/drv_usb.h"
             ex="true"
@@ -13823,6 +13865,10 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
             ex="false"
             overriding="false">
@@ -13840,6 +13886,18 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../framework/driver/usb/drv_usb.h"
             ex="true"
@@ -20161,6 +20219,10 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../../../../../../framework/driver/usart/src/drv_usart_local.h"
+            ex="true"
+            overriding="false">
+      </item>
       <item path="../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
             ex="true"
             overriding="false">
@@ -20178,6 +20240,18 @@
         </C32CPP>
         <C32Global>
         </C32Global>
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_buffer_queue.c"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../../../../../../framework/driver/usart/src/dynamic/drv_usart_read_write.c"
+            ex="true"
+            overriding="false">
       </item>
       <item path="../../../../../../framework/driver/usb/drv_usb.h"
             ex="false"
@@ -23136,7 +23210,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../framework/driver/usart/drv_usart.h"
-            ex="true"
+            ex="false"
             overriding="false">
         <C32>
         </C32>
@@ -23154,7 +23228,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../framework/driver/usart/drv_usart_definitions.h"
-            ex="true"
+            ex="false"
             overriding="false">
         <C32>
         </C32>
@@ -23172,7 +23246,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../framework/driver/usart/src/drv_usart_variant_mapping.h"
-            ex="true"
+            ex="false"
             overriding="false">
         <C32>
         </C32>
@@ -23550,7 +23624,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../framework/system/dma/sys_dma.h"
-            ex="true"
+            ex="false"
             overriding="false">
         <C32>
         </C32>
@@ -23568,7 +23642,7 @@
         </C32Global>
       </item>
       <item path="../../../../../../framework/system/dma/sys_dma_definitions.h"
-            ex="true"
+            ex="false"
             overriding="false">
         <C32>
         </C32>

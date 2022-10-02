@@ -13,6 +13,7 @@ bool APP_TIMER_Expired_ms(uint32_t * timer, uint32_t mseconds);
 bool APP_TIMER_Expired(uint32_t * timer, uint32_t seconds);
 bool APP_TIMER_Set(uint32_t * timer);
 BSP_SWITCH_STATE APP_SWITCH_Pressed(uint32_t *t, BSP_SWITCH sw, uint32_t t_debouce);
+void putsUART(const char* buffer);
 
 void CORETIMER_DelayUs ( uint32_t delay_us)
 {
@@ -82,6 +83,28 @@ BSP_SWITCH_STATE APP_SWITCH_Pressed(uint32_t *t, BSP_SWITCH sw, uint32_t t_debou
         APP_TIMER_Set(t);
     }
     return BSP_SWITCH_STATE_RELEASED;
+}
+
+//UART function
+// *****************************************************************************
+// *****************************************************************************
+// Section: Global Data Definitions
+// *****************************************************************************
+// *****************************************************************************
+//#if defined DRV_USART_PERIPHERAL_ID_IDX0 && (DRV_USART_PERIPHERAL_ID_IDX0 == USART_ID_6) 
+#if (DRV_USART_PERIPHERAL_ID_IDX0 == USART_ID_6) 
+    #define BusyUART6()		(!U6STAbits.TRMT) 
+    #define WriteUART6(data)	U6TXREG = (data)
+    #define putcUART6(c)           do{while(!U6STAbits.TRMT); WriteUART6((int)(c));}while(0)
+#endif
+void putsUART(const char* buffer)
+{
+    /* transmit till NULL character is encountered */
+	while(*buffer != '\0')
+	{
+		while( BusyUART6() );
+		putcUART6(*buffer++);
+	}
 }
 
 

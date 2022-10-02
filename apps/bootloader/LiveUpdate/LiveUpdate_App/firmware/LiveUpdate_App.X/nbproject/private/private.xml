@@ -10,19 +10,6 @@
             </bookmark>
         </file>
         <file>
-            <url>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/app.c</url>
-            <bookmark id="7">
-                <name/>
-                <line>102</line>
-                <key/>
-            </bookmark>
-            <bookmark id="5">
-                <name/>
-                <line>265</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
             <url>file:/D:/Microchip/harmony/v2_06/framework/bootloader/src/bootloader.c</url>
             <bookmark id="1">
                 <name/>
@@ -43,14 +30,21 @@
                 <key/>
             </bookmark>
         </file>
+        <file>
+            <url>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/app.c</url>
+            <bookmark id="7">
+                <name/>
+                <line>103</line>
+                <key/>
+            </bookmark>
+            <bookmark id="5">
+                <name/>
+                <line>269</line>
+                <key/>
+            </bookmark>
+        </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/app.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/framework/bootloader/src/datastream/datastream.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/framework/bootloader/src/bootloader.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_Switcher/firmware/src/app.c</file>
-            <file>file:/D:/github/microchip/harmonyV2_06/apps/bootloader/LiveUpdate/LiveUpdate_App/firmware/src/system_config/pic32mz_curiosity_v2_udp_led3/system_init.c</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

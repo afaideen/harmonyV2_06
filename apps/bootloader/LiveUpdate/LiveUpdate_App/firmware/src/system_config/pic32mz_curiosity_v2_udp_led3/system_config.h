@@ -268,7 +268,53 @@ extern "C" {
 #define DRV_TMR_ASYNC_WRITE_ENABLE_IDX1     false
 #define DRV_TMR_POWER_STATE_IDX1            SYS_MODULE_POWER_RUN_FULL
  
+ // *****************************************************************************
+/* USART Driver Configuration Options
+*/
+#define DRV_USART_INTERRUPT_MODE                    true
  
+#define DRV_USART_BYTE_MODEL_SUPPORT                false
+
+#define DRV_USART_READ_WRITE_MODEL_SUPPORT          true
+
+#define DRV_USART_BUFFER_QUEUE_SUPPORT              true
+
+#define DRV_USART_CLIENTS_NUMBER                    1
+#define DRV_USART_INSTANCES_NUMBER                  1
+
+#define DRV_USART_PERIPHERAL_ID_IDX0                USART_ID_6
+#define DRV_USART_OPER_MODE_IDX0                    DRV_USART_OPERATION_MODE_NORMAL
+#define DRV_USART_OPER_MODE_DATA_IDX0               
+#define DRV_USART_INIT_FLAG_WAKE_ON_START_IDX0      false
+#define DRV_USART_INIT_FLAG_AUTO_BAUD_IDX0          false
+#define DRV_USART_INIT_FLAG_STOP_IN_IDLE_IDX0       false
+#define DRV_USART_INIT_FLAGS_IDX0                   0
+#define DRV_USART_BRG_CLOCK_IDX0                    100000000
+#define DRV_USART_BAUD_RATE_IDX0                    115200
+#define DRV_USART_LINE_CNTRL_IDX0                   DRV_USART_LINE_CONTROL_8NONE1
+#define DRV_USART_HANDSHAKE_MODE_IDX0               DRV_USART_HANDSHAKE_NONE
+#define DRV_USART_LINES_ENABLE_IDX0                 USART_ENABLE_TX_RX_USED
+#define DRV_USART_XMIT_INT_SRC_IDX0                 INT_SOURCE_USART_6_TRANSMIT
+#define DRV_USART_RCV_INT_SRC_IDX0                  INT_SOURCE_USART_6_RECEIVE
+#define DRV_USART_ERR_INT_SRC_IDX0                  INT_SOURCE_USART_6_ERROR
+#define DRV_USART_XMIT_INT_VECTOR_IDX0              INT_VECTOR_UART6_TX
+#define DRV_USART_XMIT_INT_PRIORITY_IDX0            INT_PRIORITY_LEVEL3
+#define DRV_USART_XMIT_INT_SUB_PRIORITY_IDX0        INT_SUBPRIORITY_LEVEL0
+#define DRV_USART_RCV_INT_VECTOR_IDX0               INT_VECTOR_UART6_RX
+#define DRV_USART_RCV_INT_PRIORITY_IDX0             INT_PRIORITY_LEVEL3
+#define DRV_USART_RCV_INT_SUB_PRIORITY_IDX0         INT_SUBPRIORITY_LEVEL1
+#define DRV_USART_ERR_INT_VECTOR_IDX0               INT_VECTOR_UART6_FAULT
+#define DRV_USART_ERR_INT_PRIORITY_IDX0             INT_PRIORITY_LEVEL3
+#define DRV_USART_ERR_INT_SUB_PRIORITY_IDX0         INT_SUBPRIORITY_LEVEL1
+
+#define DRV_USART_XMIT_QUEUE_SIZE_IDX0              10
+#define DRV_USART_RCV_QUEUE_SIZE_IDX0               10
+
+
+#define DRV_USART_POWER_STATE_IDX0                  SYS_MODULE_POWER_RUN_FULL
+
+#define DRV_USART_QUEUE_DEPTH_COMBINED              20
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Middleware & Other Library Configuration

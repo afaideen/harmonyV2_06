@@ -397,7 +397,7 @@ filename = "D:\\github\\microchip\\harmonyV2_06\\apps\\bootloader\\LiveUpdate\\L
 
 
 def calculate_checksum(data):
-    l = ['\xff'] * 4096 * 64
+    l = ['\xff'] * 4096 * 128
 
 
     data_ = data.split('\n')
